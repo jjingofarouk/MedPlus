@@ -1,0 +1,25 @@
+[
+    {
+      "id": 1,
+      "name": "Amutuhaire Aletia",
+      "room": "101A",
+      "doctor": "Dr. Kayondo Brian",
+      "nurse": "Nurse Amina",
+      "status": "Stable",
+      "vitals": { "temp": "36.8°C", "bp": "120/80" },
+      "notes": "Recovering from pneumonia and saturating at 93% oxygen in room air",
+      "resources": { "oxygen": "Available", "iv": "On hold" }
+    },
+    {
+      "id": 2,
+      "name": "Nakamya Rose",
+      "room": "102B",
+      "doctor": "Dr. Kasyeba Sowedi",
+      "nurse": "Uthman Bajja",
+      "status": "Critical",
+      "vitals": { "temp": "39.0°C", "bp": "95/60" },
+      "notes": "Monitoring for sepsis",
+      "resources": { "oxygen": "In Use", "iv": "Administering" }
+    }
+  ]
+  

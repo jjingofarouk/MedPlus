@@ -1,0 +1,168 @@
+/* Base Styles */
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f5f7fa;
+    color: #002432;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Container */
+  .chronics-container {
+    padding: 20px;
+    background-color: #dfe4e5;
+  }
+  
+  /* Tabs */
+  .tabs-list {
+    display: flex;
+    justify-content: space-between;
+    background-color: #002432;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .tabs-trigger {
+    color: #dfe4e5;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tabs-trigger:hover {
+    background-color: #27c7b8;
+  }
+  
+  .tabs-content {
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Cards */
+  .card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .card-header {
+    padding: 15px;
+    border-bottom: 2px solid #27c7b8;
+    background-color: #f78837;
+    border-radius: 10px 10px 0 0;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  /* Form Fields */
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #002432;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #27c7b8;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #f78837;
+  }
+  
+  /* Chronic Condition Nav Item */
+  .nav-item {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #002432;
+    color: white;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .nav-item:hover {
+    transform: scale(1.1);
+    background-color: #27c7b8;
+  }
+  
+  /* Tooltip */
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .tooltip .tooltip-text {
+    visibility: hidden;
+    width: 160px;
+    background-color: #27c7b8;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 125%; /* Position above the element */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* Loading State */
+  .loading {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #002432;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .tabs-list {
+      flex-direction: column;
+    }
+  
+    .tabs-trigger {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .nav-item {
+      margin: 10px;
+      padding: 15px;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  

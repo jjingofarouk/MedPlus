@@ -1,0 +1,38 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2, h3 {
+    color: #002432;
+    text-align: center;
+  }
+  
+  input, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background-color: #27c7b8;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #1aa293;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  

@@ -1,0 +1,250 @@
+/* Advanced CSS for Lab Results Management Hub */
+
+:root {
+  --dark-blue: #002432;
+  --light-gray: #dfe4e5;
+  --teal: #27c7b8;
+  --orange: #f78837;
+}
+
+.lab-manager {
+  background-color: var(--light-gray);
+  color: var(--dark-blue);
+  font-family: 'Roboto', sans-serif;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.lab-manager h4 {
+  color: var(--dark-blue);
+  font-size: 2.5rem;
+  align-items: center;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 36, 50, 0.1);
+}
+
+/* Accordion Styles */
+.MuiAccordion-root {
+  background-color: #dfe4e5;
+  box-shadow: 0 4px 6px rgba(0, 36, 50, 0.1);
+  margin-bottom: 1.5rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.MuiAccordion-root:hover {
+  box-shadow: 0 6px 8px rgba(0, 36, 50, 0.15);
+}
+
+.MuiAccordionSummary-root {
+  background-color: var(--teal);
+}
+
+.MuiAccordionSummary-content h6 {
+  color: #dfe4e5;
+  font-weight: 600;
+}
+
+.MuiAccordionDetails-root {
+  padding: 1.5rem;
+}
+
+/* Form Fields */
+.MuiTextField-root, .MuiSelect-root {
+  margin-bottom: 1rem;
+}
+
+.MuiInputLabel-root {
+  color: var(--dark-blue);
+}
+
+.MuiOutlinedInput-root {
+  background-color: #dfe4e5;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: var(--teal);
+}
+
+/* Buttons */
+.MuiButton-containedPrimary {
+  background-color: var(--teal);
+  color: #dfe4e5;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.MuiButton-containedPrimary:hover {
+  background-color: #1fa396;
+  box-shadow: 0 4px 8px rgba(39, 199, 184, 0.3);
+}
+
+.MuiButton-containedSecondary {
+  background-color: var(--orange);
+  color: #dfe4e5;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.MuiButton-containedSecondary:hover {
+  background-color: #e57120;
+  box-shadow: 0 4px 8px rgba(247, 136, 55, 0.3);
+}
+
+/* Table Styles */
+.MuiTableContainer-root {
+  background-color: #dfe4e5;
+  box-shadow: 0 4px 6px rgba(0, 36, 50, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.MuiTableHead-root {
+  background-color: var(--dark-blue);
+}
+
+.MuiTableHead-root .MuiTableCell-root {
+  color: #dfe4e5;
+  font-weight: 600;
+}
+
+.MuiTableBody-root .MuiTableRow-root:nth-child(even) {
+  background-color: rgba(223, 228, 229, 0.3);
+}
+
+.MuiTableBody-root .MuiTableRow-root:hover {
+  background-color: rgba(39, 199, 184, 0.1);
+}
+
+/* Chip Styles */
+.MuiChip-root {
+  font-weight: 600;
+}
+
+.MuiChip-colorPrimary {
+  background-color: var(--teal);
+  color: #dfe4e5;
+}
+
+.MuiChip-colorSecondary {
+  background-color: var(--orange);
+  color: #dfe4e5;
+}
+
+/* Dialog Styles */
+.MuiDialog-paper {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.MuiDialogTitle-root {
+  background-color: var(--dark-blue);
+  color: #dfe4e5;
+}
+
+.MuiDialogContent-root {
+  padding: 2rem;
+}
+
+/* Chart Styles */
+canvas {
+  max-height: 300px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .lab-manager {
+    padding: 1rem;
+  }
+
+  .lab-manager h4 {
+    font-size: 2rem;
+  }
+
+  .MuiTableContainer-root {
+    overflow-x: auto;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light-gray);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--teal);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1fa396;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.lab-manager {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.MuiTableBody-root .MuiTableRow-root {
+  transition: background-color 0.3s ease;
+}
+
+.MuiIconButton-root {
+  transition: transform 0.2s ease;
+}
+
+.MuiIconButton-root:hover {
+  transform: scale(1.1);
+}
+
+/* Accessibility */
+.MuiButton-root:focus,
+.MuiIconButton-root:focus,
+.MuiOutlinedInput-root:focus-within {
+  outline: 2px solid var(--orange);
+  outline-offset: 2px;
+}
+
+/* Additional Custom Styles */
+.result-history-chart {
+  background-color: #dfe4e5;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 36, 50, 0.1);
+}
+
+.status-normal {
+  color: var(--teal);
+}
+
+.status-abnormal {
+  color: var(--orange);
+}
+
+.file-input-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.file-input-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.file-input-wrapper .MuiButton-root {
+  display: inline-block;
+  padding: 8px 16px;
+}

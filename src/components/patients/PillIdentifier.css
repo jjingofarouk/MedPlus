@@ -1,0 +1,30 @@
+.pill-identifier {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    max-width: 400px;
+    margin: auto;
+}
+
+.pill-upload-input {
+    margin: 10px 0;
+}
+
+.pill-image {
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+    border: 2px solid #007bff;
+    border-radius: 4px;
+}
+
+.error-message {
+    color: red;
+}
+
+.result-message {
+    color: green;
+    font-weight: bold;
+}

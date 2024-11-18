@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptom Checker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/symptom-styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Symptom Checker</h1>
+        </header>
+
+        <div class="main-content">
+            <div class="sidebar">
+                <a href="{{ url_for('bp.index') }}"><h2>MedHub</h2></a>
+                <a href="{{ url_for('bp.manage_appointments') }}">Manage Appointments</a>
+                <a href="{{ url_for('bp.book_appointment') }}">Book Appointment</a>
+                <a href="{{ url_for('bp.rebook_appointment') }}">ReBook Appointment</a>
+                <a href="{{ url_for('bp.cancel_appointment') }}">Cancel Appointment</a>
+                <a href="{{ url_for('bp.view_doctor_availability') }}">View Doctor Availability</a>
+                <a href="{{ url_for('bp.edit_availability') }}" class="active">Edit Availability</a>
+                <a href="{{ url_for('bp.consultations') }}">Start Consultation</a>
+                <a href="{{ url_for('bp.view_medical_history') }}">View Medical History</a>
+            </div>
+
+            <div class="symptom-checker">
+                <form id="symptomForm" onsubmit="return checkSymptoms()">
+                    <div class="form-group">
+                        <label for="symptom1">Describe your first symptom:</label>
+                        <textarea id="symptom1" class="symptom-input" placeholder="e.g., Persistent cough" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="symptom2">Describe your second symptom:</label>
+                        <textarea id="symptom2" class="symptom-input" placeholder="e.g., High fever" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="symptom3">Describe your third symptom:</label>
+                        <textarea id="symptom3" class="symptom-input" placeholder="e.g., Fatigue" required></textarea>
+                    </div>
+
+                    <div class="error-message" id="symptomError" style="display: none;">
+                        Please make sure to provide at least three symptoms.
+                    </div>
+                    
+                    <button type="submit" id="checkDiagnosis" class="btn-primary">Find Possible Conditions</button>
+                </form>
+
+                <!-- Results Section -->
+                <div id="results" class="results-section" style="display: none;">
+                    <h2>Possible Conditions Based on Your Symptoms</h2>
+                    <ul id="diagnosisList" class="diagnosis-list"></ul>
+
+                    <h3>Next Steps</h3>
+                    <div id="nextSteps" class="guidance-content"></div>
+
+                    <h3>Learn More</h3>
+                    <div id="educationalContent" class="educational-content"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Disclaimer -->
+        <div id="disclaimer" class="disclaimer">
+            <p><strong>Important:</strong> This symptom checker is intended to help you understand potential conditions but is not a substitute for professional medical advice. Always consult a healthcare provider for an accurate diagnosis and treatment plan.</p>
+        </div>
+        
+        <footer class="footer">
+            <div class="footer-links">
+                <p>&copy; 2024 MedHub. All rights reserved.</p>
+                <a href="{{ url_for('bp.index') }}">Back to Home</a>
+                <a href="{{ url_for('bp.privacy_policy') }}">Privacy Policy</a>
+                <a href="{{ url_for('bp.terms_of_service') }}">Terms of Service</a>
+                <a href="{{ url_for('bp.support') }}">Support</a>
+                <a href="{{ url_for('bp.view_medical_history') }}">View Your Medical History</a>
+                <a href="{{ url_for('bp.forum') }}">Join Our Community</a>
+                <a href="{{ url_for('bp.contact_us') }}">Contact Us</a>
+            </div>
+        </footer>
+    </div>
+    <script src="{{ url_for('static', filename='js/symptom.js') }}"></script>
+
+</body>
+</html>

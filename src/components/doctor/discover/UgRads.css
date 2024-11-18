@@ -1,0 +1,92 @@
+.medical-imaging-hub {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #F5F7FA; /* Light Gray */
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .search-container {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .search-input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #009688;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .cases-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .case-card {
+    background-color: #dfe4e5;
+    border-radius: 12px;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    flex: 1 1 calc(45% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .case-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .case-image-container {
+    max-height: 200px;
+    overflow: hidden;
+  }
+  
+  .case-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .case-title {
+    font-size: 1.25em;
+    color: #004C54;
+  }
+  
+  .case-description {
+    color: #333333;
+  }
+  
+  .no-cases {
+    text-align: center;
+    font-size: 1.2em;
+    color: #D32F2D;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .page-item {
+    margin: 0 5px;
+  }
+  
+  .page-link {
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: #27c7b8;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .page-link:hover {
+    background-color: #009688;
+  }
+  

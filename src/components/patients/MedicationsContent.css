@@ -1,0 +1,162 @@
+/* Global styles */
+body {
+    background-color: #002432;
+    color: #dfe4e5;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Card styles */
+  .card {
+    background-color: rgba(223, 228, 229, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-header {
+    background-color: rgba(39, 199, 184, 0.1);
+    padding: 20px;
+    border-bottom: 2px solid #27c7b8;
+  }
+  
+  .card-title {
+    color: #27c7b8;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .card-description {
+    color: #dfe4e5;
+    font-size: 16px;
+    margin-top: 8px;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  /* Button styles */
+  .button {
+    background-color: #27c7b8;
+    color: #002432;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #f78837;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(247, 136, 55, 0.3);
+  }
+  
+  /* Medication grid */
+  .medication-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .medication-button {
+    background-color: rgba(39, 199, 184, 0.1);
+    border: 2px solid #27c7b8;
+    color: #dfe4e5;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .medication-button:hover {
+    background-color: rgba(247, 136, 55, 0.1);
+    border-color: #f78837;
+    transform: scale(1.05);
+  }
+  
+  /* Tabs styles */
+  .tabs {
+    margin-top: 24px;
+  }
+  
+  .tab-list {
+    display: flex;
+    overflow-x: auto;
+    border-bottom: 2px solid #27c7b8;
+    padding-bottom: 8px;
+  }
+  
+  .tab {
+    background-color: transparent;
+    color: #dfe4e5;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .tab:hover {
+    color: #f78837;
+  }
+  
+  .tab[data-state="active"] {
+    color: #27c7b8;
+    border-bottom: 3px solid #27c7b8;
+  }
+  
+  /* Tab content styles */
+  .tab-content {
+    padding: 24px 0;
+  }
+  
+  .collapsible-section {
+    margin-bottom: 16px;
+  }
+  
+  /* Loading spinner */
+  .loading-spinner {
+    border: 4px solid rgba(223, 228, 229, 0.3);
+    border-top: 4px solid #27c7b8;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .card-title {
+      font-size: 20px;
+    }
+  
+    .card-description {
+      font-size: 14px;
+    }
+  
+    .button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .tab {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }

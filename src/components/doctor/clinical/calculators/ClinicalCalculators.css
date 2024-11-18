@@ -1,0 +1,94 @@
+/* Root styles */
+:root {
+    --primary-color: #004C54;      /* Deep Teal */
+    --secondary-color: #009688;    /* Medium Teal */
+    --accent-color: #FF7043;       /* Coral Orange */
+    --background-color: #F5F7FA;   /* Light Gray */
+    --text-color: #333333;         /* Dark Gray */
+    --success-color: #4CAF50;      /* Green */
+    --error-color: #D32F2D;        /* Red */
+  }
+  
+  /* Main container */
+  .clinical-calculators-container {
+    padding: 24px;
+    background-color: var(--background-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    justify-content: flex-start;
+  }
+  
+  /* Select Component */
+  .MuiSelect-root {
+    width: 100%;
+    max-width: 1400px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    padding: 12px;
+    background-color: #F5F7FA;
+    font-size: 1rem;
+    color: var(--text-color);
+    appearance: none;
+    cursor: pointer;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .MuiSelect-root:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .MuiSelect-root:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 8px rgba(0, 76, 84, 0.3);
+  }
+  
+  /* Select Item */
+  .MuiSelectItem-root {
+    padding: 10px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .MuiSelectItem-root:hover {
+    background-color: var(--secondary-color);
+    color: #F5F7FA;
+  }
+  
+  /* Calculator Component Wrapper */
+  .calculator-component {
+    width: 100%;
+    max-width: 1400px;
+    background-color: #F5F7FA;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .calculator-component:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Placeholder Message */
+  .calculator-component > div {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    padding: 32px;
+    font-weight: bold;
+  }
+  
+  /* Responsive Styles */
+  @media (min-width: 768px) {
+    .clinical-calculators-container {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+  

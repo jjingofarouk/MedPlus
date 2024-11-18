@@ -1,0 +1,117 @@
+:root {
+    --primary-bg: #f0f4f8; /* Light background color */
+    --secondary-bg: #dfe4e5; /* Card background color */
+    --accent-teal: #00a8b5; /* Primary accent color */
+    --accent-orange: #ff6b35; /* Secondary accent color */
+    --text-primary: #002432; /* Primary text color */
+    --text-secondary: #718096; /* Secondary text color */
+    --border-color: #e2e8f0; /* Border color */
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --border-radius: 12px;
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--primary-bg);
+    color: var(--text-primary);
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    max-width: 1400px; /* Set a max-width for larger screens */
+    margin: 0 auto; /* Center the container */
+    padding: 0 2rem; /* Add horizontal padding */
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    text-align: center; /* Center-align the title */
+}
+
+.card {
+    background-color: var(--secondary-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+    margin-bottom: 2rem;
+}
+
+.card-content {
+    padding: 1.5rem; /* Add padding inside the card */
+}
+
+.tabs-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid layout */
+    gap: 1rem;
+    margin-bottom: 1.5rem; /* Margin below the tabs */
+}
+
+.tab-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+    border-radius: var(--border-radius);
+    background-color: transparent;
+    color: var(--text-primary);
+    transition: var(--transition);
+}
+
+.tab-trigger:hover {
+    background-color: var(--accent-teal);
+    color: white; /* Change text color on hover */
+}
+
+.tab-trigger.active {
+    background-color: var(--accent-teal);
+    color: white; /* Change text color for active tab */
+}
+
+.tab-content {
+    padding: 1rem 0; /* Add padding around tab content */
+}
+
+.flex {
+    display: flex; /* Make a flex container */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Center items vertically */
+    margin-top: 2rem; /* Add space above */
+}
+
+.button {
+    background-color: var(--accent-teal);
+    color: white; /* Set text color */
+    padding: 0.5rem 1rem; /* Button padding */
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.button:hover {
+    background-color: var(--accent-orange); /* Change background on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Reduce font size on smaller screens */
+    }
+
+    .tabs-list {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on small screens */
+    }
+
+    .tab-trigger {
+        font-size: 0.85rem; /* Adjust font size for smaller screens */
+    }
+
+    .button {
+        padding: 0.4rem 0.8rem; /* Adjust button padding */
+    }
+}

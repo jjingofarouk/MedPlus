@@ -1,0 +1,296 @@
+/* Professional Creative Dashboard CSS for Telehealth App */
+
+:root {
+    --primary-bg: #f0f4f8;
+    --secondary-bg: #dfe4e5;
+    --accent-teal: #00a8b5;
+    --accent-orange: #ff6b35;
+    --text-primary: #2d3748;
+    --text-secondary: #718096;
+    --border-color: #e2e8f0;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --border-radius: 12px;
+    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+  
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--primary-bg);
+    color: var(--text-primary);
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .dashboard {
+    max-width: 1400px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .dashboard-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+  
+  .dashboard-actions {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .dashboard-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+  
+  .tile-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .tile, .dashboard-item {
+    background-color: var(--secondary-bg);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+    overflow: hidden;
+    max-width: 100%;
+  }
+  
+  .tile:hover, .dashboard-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .tile h2, .dashboard-item h2 {
+    color: var(--text-primary);
+    margin-top: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .tile p, .dashboard-item p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-teal);
+    color: #dfe4e5;
+    padding: 0.75rem 1.25rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #008c98;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+  
+  .button-icon {
+    margin-right: 0.5rem;
+  }
+  
+  .medical-tip {
+    background: #002432;
+    color: #dfe4e5  ;
+  }
+  
+  .medical-tip p {
+    color: #dfe4e5 ;
+  }
+  
+  .calendar-card {
+    overflow: hidden;
+  }
+  
+  .progress-container {
+    margin-top: 1rem;
+  }
+  
+  .progress-container .progress-bar {
+    background-color: #e2e8f0;
+    border-radius: 15px;
+    height: 8px;
+    overflow: hidden;
+  }
+  
+  .progress-container .progress-fill {
+    background: linear-gradient(90deg, var(--accent-orange), #ff9f1c);
+    height: 100%;
+    border-radius: 15px;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .activity-feed ul, .notifications ul, .upcoming-appointments ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .activity-feed li, .notifications li, .upcoming-appointments li {
+    background-color: var(--primary-bg);
+    margin-bottom: 0.75rem;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    font-size: 0.9rem;
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+  }
+  
+  .activity-feed li:hover, .notifications li:hover, .upcoming-appointments li:hover {
+    background-color: var(--secondary-bg);
+    transform: translateX(5px);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .dashboard-content {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .dashboard-content, .tile-container {
+      grid-template-columns: 1fr;
+    }
+    
+    .tile, .dashboard-item {
+      padding: 1.25rem;
+    }
+  }
+  
+  /* Custom toggle switch */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #cbd5e0;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--accent-teal);
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(22px);
+  }
+  
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .dashboard-item {
+    animation: fadeInUp 0.5s ease-out;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--primary-bg);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--accent-teal);
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #008c98;
+  }
+  
+  /* Glassmorphism effect for certain elements */
+  .glassmorphism {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  
+  /* Neumorphism effect for buttons */
+  .neumorphic {
+    background: var(--primary-bg);
+    box-shadow: 5px 5px 10px #d1d9e6, -5px -5px 10px #dfe4e5;
+    border: none;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .neumorphic:hover {
+    box-shadow: inset 5px 5px 10px #d1d9e6, inset -5px -5px 10px #dfe4e5;
+  }

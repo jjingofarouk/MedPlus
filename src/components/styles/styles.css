@@ -1,0 +1,150 @@
+/* Base styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #002432; /* Dark Blue */
+  background-color: #dfe4e5; /* Light Gray */
+}
+
+.LandingPage {
+  background-color: #dfe4e5; /* White background for iOS-like feel */
+}
+
+/* iOS-style navigation */
+.nav-container {
+  background-color: rgba(223, 228, 229, 0.8); /* Light Gray with opacity */
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 36, 50, 0.1); /* Dark Blue border */
+}
+
+/* iOS-style buttons */
+.button {
+  background-color: #27c7b8; /* Teal */
+  color: #dfe4e5;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #f78837; /* Orange */
+}
+
+/* iOS-style menu toggle */
+#menu-toggle:checked + #menu {
+  display: block;
+}
+
+#dropdown-toggle:checked + #dropdown {
+  display: block;
+}
+
+/* iOS-style links and arrows */
+a, span {
+  position: relative;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: #27c7b8; /* Teal */
+}
+
+a.arrow, span.arrow {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+a.arrow .arrow_icon, span.arrow .arrow_icon {
+  position: relative;
+  margin-left: 0.5em;
+}
+
+a.arrow .arrow_icon svg, span.arrow .arrow_icon svg {
+  transition: transform 0.3s ease;
+  fill: #27c7b8; /* Teal */
+}
+
+a.arrow:hover .arrow_icon svg, span.arrow:hover .arrow_icon svg {
+  transform: translateX(0.5em);
+  fill: #f78837; /* Orange on hover */
+}
+
+/* iOS-style gradient background */
+.bg-blue-teal-gradient {
+  background: linear-gradient(135deg, #002432 0%, #27c7b8 100%); /* Dark Blue to Teal */
+}
+
+/* iOS-style card design */
+.card {
+  background-color: #dfe4e5;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 36, 50, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* iOS-style cover image */
+.cover {
+  border-radius: 0 0 40px 0;
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .cover {
+    border-radius: 0 0 80px 0;
+  }
+}
+
+/* iOS-style form elements */
+input[type="text"], input[type="email"], textarea {
+  border: 1px solid #dfe4e5;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 16px;
+}
+
+/* iOS-style switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #dfe4e5;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #27c7b8;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}

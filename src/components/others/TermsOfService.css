@@ -1,0 +1,33 @@
+.terms-of-service {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.terms-of-service h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.terms-of-service h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    border-bottom: 2px solid #2e5668; /* Dark Teal */
+    padding-bottom: 5px;
+}
+
+.terms-of-service p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.terms-of-service ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.terms-of-service li {
+    margin-bottom: 10px;
+}

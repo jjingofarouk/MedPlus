@@ -1,0 +1,189 @@
+:root {
+  --primary-color: #004C54; /* Deep Teal */
+  --secondary-color: #009688; /* Medium Teal */
+  --accent-color: #FF7043; /* Coral Orange */
+  --background-color: #F5F7FA; /* Light Gray */
+  --text-color: #333333; /* Dark Gray */
+  --success-color: #4CAF50; /* Green */
+  --error-color: #D32F2D; /* Red */
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Inter', sans-serif;
+}
+
+.patient-education-portal {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-footer {
+  padding: 1rem;
+  border-top: 1px solid var(--background-color);
+}
+
+.badge {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.badge-outline {
+  background-color: transparent;
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.button {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: darken(var(--accent-color), 10%);
+}
+
+.button-outline {
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+.button-outline:hover {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.input {
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 2px solid var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.tab {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+}
+
+.tab.active {
+  border-bottom-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.progress-bar {
+  background-color: var(--background-color);
+  border-radius: 4px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  background-color: var(--success-color);
+  height: 100%;
+  transition: width 0.3s ease-in-out;
+}
+
+.dialog {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.dialog-header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.dialog-content {
+  padding: 1rem;
+}
+
+.quiz-question {
+  margin-bottom: 1rem;
+}
+
+.quiz-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.quiz-option input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+.quiz-result {
+  background-color: var(--background-color);
+  border-radius: 4px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.quiz-result.success {
+  background-color: var(--success-color);
+  color: white;
+}
+
+.quiz-result.error {
+  background-color: var(--error-color);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}

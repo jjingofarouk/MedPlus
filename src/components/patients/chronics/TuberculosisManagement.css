@@ -1,0 +1,79 @@
+.tb-management-container {
+    background-color: #dfe4e5; /* Light background for a clean look */
+    padding: 20px;
+    color: #002432; /* Main text color for readability */
+  }
+  
+  .management-card {
+    background-color: #fff;
+    border: 1px solid #002432;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .management-card .MuiCardHeader-root {
+    background-color: #27c7b8; /* Header background color */
+    color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #002432;
+  }
+  
+  .management-card .MuiCardContent-root {
+    color: #002432; /* Card content text color */
+  }
+  
+  .MuiTypography-h4 {
+    color: #002432;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .MuiSelect-outlined {
+    border: 2px solid #002432;
+    color: #002432;
+  }
+  
+  .MuiSelect-root {
+    background-color: #fff;
+  }
+  
+  .MuiButton-containedPrimary {
+    background-color: #27c7b8;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .MuiButton-containedPrimary:hover {
+    background-color: #f78837; /* Hover state with a contrasting orange */
+  }
+  
+  .MuiButton-startIcon {
+    color: #fff;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  ul li {
+    background-color: #f78837;
+    color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .MuiTextField-root {
+    margin-bottom: 15px;
+  }
+  
+  .mt-4 {
+    margin-top: 16px;
+  }
+  

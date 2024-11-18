@@ -1,0 +1,21 @@
+.refill-reminders {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="text"],
+input[type="date"] {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+button {
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+}
+
+.message {
+    color: green;
+}

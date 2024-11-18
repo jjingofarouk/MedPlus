@@ -1,0 +1,68 @@
+.drug-interaction-checker {
+    background-color: #002432; /* Dark background */
+    color: #dfe4e5; /* Light text color */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color: #27c7b8; /* Highlighted color for headings */
+    text-align: center;
+}
+
+li {
+    color:#002432; 
+
+}
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #27c7b8;
+    border-radius: 4px;
+    background-color: #dfe4e5; /* Light background for inputs */
+    color: #002432; /* Dark text for inputs */
+}
+
+button {
+    background-color: #27c7b8; /* Button background color */
+    color: #002432; /* Button text color */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #f78837; /* Button hover color */
+}
+
+h3 {
+    color: #f78837; /* Color for interaction results */
+}
+
+.suggestions {
+    margin-top: 20px;
+    background-color: #dfe4e5; /* Background for suggestions */
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.suggestion-item {
+    color: #002432; /* Dark text for suggestion items */
+    cursor: pointer;
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #27c7b8;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.suggestion-item:hover {
+    background-color: #f78837; /* Highlight suggestion on hover */
+}

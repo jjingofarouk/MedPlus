@@ -1,0 +1,33 @@
+.analytics-container {
+    padding: 20px;
+    background-color: #dfe4e5;
+  }
+  
+  .metrics {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .metric-card {
+    background-color: #002432;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .metric-card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .chart-container {
+    height: 400px;
+    margin-top: 30px;
+  }
+  

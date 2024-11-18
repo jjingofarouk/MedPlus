@@ -1,0 +1,67 @@
+:root {
+  --primary-color: #004C54; /* Deep Teal */
+  --secondary-color: #009688; /* Medium Teal */
+  --accent-color: #FF7043; /* Coral Orange */
+  --background-color: #F5F7FA; /* Light Gray */
+  --text-color: #333333; /* Dark Gray */
+  --success-color: #4CAF50; /* Green */
+  --error-color: #D32F2F; /* Red */
+}
+
+.inverted-icon {
+  filter: invert(1);
+  cursor: pointer;
+}
+
+.pointed-icon {
+  cursor: pointer;
+}
+
+/* Header styles */
+.navbar {
+  background-color: var(--primary-color) !important; /* Deep Teal */
+  color: var(--background-color) !important; /* Light Gray for text */
+}
+
+.navbar .navbar-nav .nav-link {
+  color: var(--background-color) !important; /* Light Gray for links */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--accent-color) !important; /* Coral Orange for hover effect */
+}
+
+.navbar .navbar-brand {
+  color: var(--secondary-color) !important; /* Medium Teal for the brand logo */
+}
+
+.navbar .navbar-toggler {
+  border-color: var(--background-color) !important; /* Light Gray for toggler */
+}
+
+.navbar .navbar-toggler-icon {
+  background-color: var(--background-color) !important; /* Light Gray for toggler icon */
+}
+
+/* Optional: Adjust navbar link active state */
+.navbar .nav-link.active {
+  color: var(--accent-color) !important; /* Coral Orange for active link */
+}
+
+.dropdown-menu {
+  background-color: var(--primary-color); /* Deep Teal */
+}
+
+.nav-dropdown {
+  background-color: var(--primary-color); /* Deep Teal */
+}
+
+/* Optional: Adjust dropdown items */
+.dropdown-item {
+  color: var(--background-color) !important; /* Light Gray for dropdown items */
+}
+
+.dropdown-item:hover {
+  background-color: var(--accent-color); /* Coral Orange for dropdown item hover */
+}

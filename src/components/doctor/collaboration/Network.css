@@ -1,0 +1,116 @@
+.network-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2, h3 {
+    text-align: center;
+    color: #002432;
+  }
+  
+  .network-grid {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .specialists-list {
+    width: 30%;
+  }
+  
+  .specialists-list h3 {
+    color: #27c7b8;
+    margin-bottom: 10px;
+  }
+  
+  .specialists-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .specialist-item {
+    padding: 10px;
+    background-color: #dfe4e5;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .specialist-item:hover {
+    background-color: #27c7b8;
+    color: white;
+  }
+  
+  .specialist-item.active {
+    background-color: #27c7b8;
+    color: white;
+  }
+  
+  .conversation-area {
+    width: 70%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .conversation-history {
+    height: 300px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .conversation-item {
+    margin-bottom: 15px;
+  }
+  
+  .conversation-item p {
+    background-color: #27c7b8;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  
+  .conversation-item small {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+  }
+  
+  .message-form {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  
+  .message-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    height: 100px;
+  }
+  
+  .send-btn {
+    padding: 10px;
+    background-color: #27c7b8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .send-btn:hover {
+    background-color: #1aa293;
+  }
+  

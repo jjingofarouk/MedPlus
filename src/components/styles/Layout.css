@@ -1,0 +1,22 @@
+.layout {
+  display: grid;
+  grid-template-rows: 60px auto; /* Header height and content area */
+  grid-template-columns: 250px auto; /* Sidebar width and main content */
+  min-height: 100vh;
+}
+
+.header {
+  grid-column: 1 / -1; /* Header spans full width */
+  background-color: #f0f0f0;
+}
+
+.sidebar {
+  grid-row: 2 / 3; /* Sidebar is in the second row */
+  background-color: #f0f0f0;
+}
+
+.main-content {
+  grid-row: 2 / 3; /* Content is in the second row */
+  padding: 20px;
+  background-color: #dfe4e5;
+}

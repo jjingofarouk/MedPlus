@@ -1,0 +1,35 @@
+.predictive-analytics {
+    padding: 20px;
+    background-color: #dfe4e5;
+    color: #002432;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+  }
+  
+  .alert {
+    background-color: #f78837;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #27c7b8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #002432;
+  }
+  

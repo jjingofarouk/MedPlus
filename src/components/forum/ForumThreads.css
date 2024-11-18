@@ -1,0 +1,84 @@
+
+/* ForumThreads.css */
+
+:root {
+  --dark-blue: #002432;
+  --light-gray: #dfe4e5;
+  --teal: #27c7b8;
+  --orange: #f78837;
+}
+
+body {
+  background-color: var(--light-gray);
+  color: var(--dark-blue);
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.forum-threads {
+  max-width: 1400px;
+  margin: 0;
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.section-title {
+  color: var(--orange);
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 2px solid var(--teal);
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 36, 50, 0.1);
+  padding: 20px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  background-color: var(--teal);
+  color: white;
+  box-shadow: 0 6px 20px rgba(39, 199, 184, 0.3);
+}
+
+.card-title {
+  color: var(--dark-blue);
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.card-title:hover {
+  color: var(--orange);
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: var(--dark-blue);
+}
+
+.card-details span {
+  margin-right: 15px;
+}
+
+.card-details span:last-child {
+  margin-right: 0;
+}

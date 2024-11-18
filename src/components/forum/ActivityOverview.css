@@ -1,0 +1,57 @@
+/* Define color variables */
+:root {
+    --dark-blue: #002432;
+    --light-gray: #dfe4e5;
+    --teal: #27c7b8;
+    --orange: #f78837;
+    --background-color: #dfe4e5;
+    --card-background: #002432;
+    --text-color: #dfe4e5;
+    --secondary-color: #f78837;
+  }
+  
+  .activity-overview {
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1400px;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    color: var(--teal);
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid var(--teal);
+    padding-bottom: 10px;
+  }
+  
+  .activity-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .activity-card {
+    background-color: var(--card-background);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    color: var(--text-color);
+  }
+  
+  .activity-card p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  
+  .activity-time {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--secondary-color);
+    margin-top: 5px;
+  }
+  

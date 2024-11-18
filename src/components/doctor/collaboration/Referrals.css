@@ -1,0 +1,75 @@
+.referrals-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #dfe4e5;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2, h3 {
+    text-align: center;
+    color: #002432;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .form-group textarea {
+    height: 100px;
+  }
+  
+  .submit-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background-color: #27c7b8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #1aa293;
+  }
+  
+  .referrals-list-section {
+    margin-top: 20px;
+  }
+  
+  .referrals-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .referral-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #dfe4e5;
+    border-radius: 5px;
+    color: #002432;
+  }
+  
+  .referral-item strong {
+    font-weight: bold;
+  }
+  

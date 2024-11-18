@@ -1,0 +1,169 @@
+/* ReBookAppointment.css */
+
+:root {
+  --primary-color: #004C54; /* Deep Teal */
+  --secondary-color: #009688; /* Medium Teal */
+  --accent-color: #FF7043; /* Coral Orange */
+  --background-color: #F5F7FA; /* Light Gray */
+  --text-color: #333333; /* Dark Gray */
+  --success-color: #4CAF50; /* Green */
+  --error-color: #D32F2D; /* Red */
+}
+
+.rebook-appointment-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rebook-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-title {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.form-select,
+.form-input {
+  padding: 0.5rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-select:focus,
+.form-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(0, 76, 84, 0.2);
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+}
+
+.btn-primary:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--text-color);
+  color: var(--background-color);
+}
+
+.alert {
+  padding: 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.alert-success {
+  background-color: var(--success-color);
+  color: white;
+}
+
+.alert-error {
+  background-color: var(--error-color);
+  color: white;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: var(--background-color);
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.modal-title {
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.btn-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.modal-body {
+  margin-bottom: 1.5rem;
+}
+
+.modal-body ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.modal-body li {
+  margin-bottom: 0.5rem;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}

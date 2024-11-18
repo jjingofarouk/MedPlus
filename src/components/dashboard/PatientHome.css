@@ -1,0 +1,151 @@
+:root {
+    --primary-color: #004C54;
+    --secondary-color: #009688;
+    --accent-color: #FF7043;
+    --background-color: #F5F7FA;
+    --text-color: #333333;
+    --success-color: #4CAF50;
+    --error-color: #D32F2D;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .patient-dashboard {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .dashboard-header {
+    margin-bottom: 2rem;
+  }
+  
+  .dashboard-header h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .dashboard-header p {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+  }
+  
+  .medical-tip {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+  
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .card-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card-header h2 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .card-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .card-content {
+    padding: 1rem;
+  }
+  
+  .card-content ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .card-content li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .card-content li svg {
+    margin-right: 0.5rem;
+  }
+  
+  .quick-actions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  
+  .button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .button:hover {
+    background-color: var(--primary-color);
+  }
+  
+  .book-appointment, .manage-goals {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .health-goals-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .goal-chart {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .medications-card li, .vital-signs-card li {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  @media (max-width: 768px) {
+    .dashboard-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .health-goals-content {
+      flex-direction: column;
+    }
+    
+    .goal-chart {
+      margin-top: 1rem;
+    }
+  }

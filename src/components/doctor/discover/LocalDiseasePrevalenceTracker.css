@@ -1,0 +1,36 @@
+.tracker-card {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .disease-form {
+    margin-bottom: 20px;
+  }
+  
+  .error-message {
+    color: red;
+  }
+  
+  .results {
+    margin-top: 20px;
+  }
+  
+  .map {
+    margin-top: 20px;
+  }
+  
+  .map-icon {
+    font-size: 24px;
+    color: #27c7b8;
+  }
+  
+  .actions {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  

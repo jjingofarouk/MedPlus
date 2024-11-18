@@ -1,0 +1,109 @@
+.footer {
+  background-color: #002432;
+  color: #dfe4e5;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer-description {
+  margin-bottom: 1rem;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.newsletter-label {
+  font-size: 1rem;
+}
+
+.newsletter-input-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.newsletter-input {
+  padding: 0.5rem;
+  border: 1px solid #dfe4e5;
+  border-radius: 0.25rem;
+  width: 200px;
+}
+
+.newsletter-button {
+  padding: 0.5rem 1rem;
+  background-color: #27c7b8;
+  border: none;
+  border-radius: 0.25rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer-subtitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list-item {
+  margin-bottom: 0.5rem;
+}
+
+.footer-link {
+  color: #dfe4e5;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-icon {
+  fill: #dfe4e5;
+}
+
+.footer-text {
+  margin-left: 0.5rem;
+}
+
+.footer-social {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-social-item {
+  margin: 0;
+}
+
+.footer-social-icon {
+  fill: #dfe4e5;
+  width: 24px;
+  height: 24px;
+}

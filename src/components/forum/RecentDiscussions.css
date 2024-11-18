@@ -1,0 +1,71 @@
+/* Define color variables */
+:root {
+    --dark-blue: #002432;
+    --light-gray: #dfe4e5;
+    --teal: #27c7b8;
+    --orange: #f78837;
+    --card-background: #dfe4e5;
+    --card-title-color: #002432;
+    --card-detail-color: #555555;
+    --section-title-color: #27c7b8;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+    --card-hover-shadow: rgba(0, 0, 0, 0.2);
+  }
+  
+  .recent-discussions {
+    background-color: var(--light-gray);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--card-shadow);
+    width: 100%;
+    max-width: 1400px;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    color: var(--section-title-color);
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid var(--section-title-color);
+    padding-bottom: 10px;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .card {
+    background-color: var(--card-background);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--card-shadow);
+    padding: 15px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 8px var(--card-hover-shadow);
+  }
+  
+  .card-title {
+    display: block;
+    font-size: 1.125rem;
+    color: var(--card-title-color);
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .card-title:hover {
+    color: var(--teal);
+    text-decoration: underline;
+  }
+  
+  .card-details {
+    font-size: 0.875rem;
+    color: var(--card-detail-color);
+    display: flex;
+    gap: 15px;
+  }
+  

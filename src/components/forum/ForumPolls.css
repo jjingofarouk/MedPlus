@@ -1,0 +1,79 @@
+/* Forum.css */
+
+.forum-polls {
+    padding: 2rem;
+    background-color: #dfe4e5; /* Light Gray */
+    width: 100%;
+    max-width: 1400px;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #002432; /* Dark Navy */
+    text-align: center;
+  }
+  
+  .polls-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .poll-card {
+    background-color: #dfe4e5;
+    border: 1px solid #dfe4e5;
+    border-radius: 10px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .poll-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .poll-card p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #002432; /* Dark Navy */
+    margin-bottom: 1rem;
+  }
+  
+  .poll-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .poll-card li {
+    background-color: #f6f6f6;
+    color: #002432; /* Dark Navy */
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #dfe4e5;
+    transition: background-color 0.2s ease;
+  }
+  
+  .poll-card li:hover {
+    background-color: #27c7b8; /* Teal */
+    color: #dfe4e5; /* White */
+  }
+  
+  .poll-card li:before {
+    content: "• ";
+    color: #f78837; /* Orange */
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .polls-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  

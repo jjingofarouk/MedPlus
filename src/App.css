@@ -1,0 +1,43 @@
+:root {
+  --primary-color: #004C54; /* Deep Teal */
+  --secondary-color: #009688; /* Medium Teal */
+  --accent-color: #FF7043; /* Coral Orange */
+  --background-color: #F5F7FA; /* Light Gray */
+  --text-color: #333333; /* Dark Gray */
+  --success-color: #4CAF50; /* Green */
+  --error-color: #D32F2D; /* Red */
+}
+
+.App {
+  text-align: center;
+  color: var(--text-color); /* Use text color variable */
+  background-color: var(--background-color); /* Use background color variable */
+}
+
+h1 {
+  margin-top: 20px;
+  color: var(--primary-color); /* Use primary color for headings */
+}
+
+button {
+  padding: 1px;
+  border-radius: 10px;
+  color: var(--text-color); /* Use text color variable */
+  background-color: var(--secondary-color); /* Use secondary color for buttons */
+  border: none; /* Optional: remove border for a cleaner look */
+  transition: background-color 0.3s; /* Add a smooth transition for hover effects */
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: var(--accent-color); /* Change to accent color on hover */
+}
+
+/* Additional styles for success and error messages */
+.alert-success {
+  color: var(--success-color);
+}
+
+.alert-error {
+  color: var(--error-color);
+}

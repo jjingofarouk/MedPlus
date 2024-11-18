@@ -1,0 +1,31 @@
+/* Notification.css */
+.notification-list {
+    padding: 10px;
+    margin: 0;
+}
+
+.notification {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.notification.info {
+    background-color: #e7f3fe;
+    color: #31708f;
+}
+
+.notification.warning {
+    background-color: #fcf8e3;
+    color: #8a6d3b;
+}
+
+.notification.error {
+    background-color: #f2dede;
+    color: #a94442;
+}
+
+.notification.success {
+    background-color: #dff0d8;
+    color: #3c763d;
+}

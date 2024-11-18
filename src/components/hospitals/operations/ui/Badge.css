@@ -1,0 +1,37 @@
+.badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.875rem; /* Smaller font size for badges */
+    font-weight: bold;
+    text-align: center;
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+  }
+  
+  .badge-secondary {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+  }
+  
+  .badge-light {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 1px solid var(--background-color);
+  }
+  
+  .badge-dark {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border: 1px solid var(--text-color);
+  }
+  
+  /* Define custom properties for colors */
+  :root {
+    --primary-color: #27c7b8; /* Teal */
+    --secondary-color: #f78837; /* Orange */
+    --background-color: #dfe4e5; /* Light Gray */
+    --text-color: #002432; /* Dark Navy */
+  }
+  

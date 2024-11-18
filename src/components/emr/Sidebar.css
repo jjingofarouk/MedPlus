@@ -1,0 +1,92 @@
+/* Sidebar container */
+.sidebar {
+    width: 250px; /* Adjust the width as needed */
+    height: 100vh; /* Full height */
+    background-color: #002432; /* Dark blue background */
+    color: #dfe4e5; /* Light gray text */
+    position: fixed; /* Fixed positioning */
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease; /* Smooth slide effect */
+    transform: translateX(-100%); /* Initially hidden */
+    z-index: 1000; /* Ensure it's above other elements */
+  }
+  
+  /* Sidebar open state */
+  .sidebar.open {
+    transform: translateX(0); /* Show the sidebar */
+  }
+  
+  /* Sidebar links */
+  .sidebar .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar .nav-links li {
+    border-bottom: 1px solid #27c7b8; /* Teal border for separation */
+  }
+  
+  .sidebar .nav-links li a {
+    display: block;
+    padding: 15px 20px;
+    color: #dfe4e5; /* Light gray text */
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Sidebar link hover effect */
+  .sidebar .nav-links li a:hover {
+    background-color: #27c7b8; /* Teal background on hover */
+    color: #002432; /* Dark blue text on hover */
+  }
+  
+  /* Sidebar toggle button */
+  .sidebar-toggle {
+    display: none; /* Hide by default, show on mobile */
+  }
+  
+  /* Media query for mobile view */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 200px; /* Adjust width for mobile */
+    }
+  
+    .sidebar-toggle {
+      display: block; /* Show toggle button on mobile */
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background-color: #002432; /* Dark blue background */
+      color: #dfe4e5; /* Light gray text */
+      border: none;
+      padding: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      z-index: 1001; /* Ensure above the sidebar */
+    }
+  }
+  
+  /* Sidebar header */
+  .sidebar-header {
+    padding: 20px;
+    background-color: #002432; /* Dark blue background */
+    color: #dfe4e5; /* Light gray text */
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Sidebar footer */
+  .sidebar-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: #002432; /* Dark blue background */
+    color: #dfe4e5; /* Light gray text */
+    text-align: center;
+    font-size: 14px;
+  }
+  

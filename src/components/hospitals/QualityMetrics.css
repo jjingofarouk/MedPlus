@@ -1,0 +1,101 @@
+:root {
+    --primary-color: #004C54; /* Deep Teal */
+    --secondary-color: #009688; /* Medium Teal */
+    --accent-color: #FF7043; /* Coral Orange */
+    --background-color: #F5F7FA; /* Light Gray */
+    --text-color: #333333; /* Dark Gray */
+    --success-color: #4CAF50; /* Green */
+    --error-color: #D32F2F; /* Red */
+  }
+  
+  /* Base styles for mobile devices */
+  .container {
+    padding: 20px;
+    background-color: var(--background-color); /* Light background for mobile */
+    border-radius: 8px;
+    color: var(--text-color); /* Dark text for contrast */
+  }
+  
+  h2,
+  h3 {
+    color: var(--primary-color); /* Deep Teal for headings */
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: var(--secondary-color); /* Medium Teal for buttons */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  
+  button:hover {
+    background-color: #1fa0a3; /* Darker teal on hover */
+  }
+  
+  ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+  }
+  
+  li {
+    margin: 10px 0; /* Space out list items */
+  }
+  
+  .alert {
+    color: var(--accent-color); /* Coral Orange for alerts */
+  }
+  
+  /* Chart container */
+  .chart-container {
+    margin-top: 20px;
+  }
+  
+  /* Styles for larger screens */
+  @media (min-width: 768px) {
+    .container {
+      padding: 30px;
+      background-color: var(--primary-color); /* Dark background for larger screens */
+      color: var(--background-color); /* Light text for contrast */
+    }
+  
+    h2,
+    h3 {
+      color: var(--background-color); /* Light color for headings */
+    }
+  
+    button {
+      padding: 12px 20px; /* Increased button size */
+    }
+  
+    li {
+      font-size: 1.1em; /* Slightly larger text for list items */
+    }
+  }
+  
+  /* Styles for desktop screens */
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 800px; /* Set a max width for larger screens */
+      margin: 0 auto; /* Center the container */
+    }
+  
+    h2 {
+      font-size: 2em; /* Larger font size for headings */
+    }
+  
+    h3 {
+      font-size: 1.5em; /* Larger font size for subheadings */
+    }
+  
+    button {
+      padding: 14px 25px; /* Larger button size */
+    }
+  
+    .alert {
+      font-size: 1.1em; /* Larger font for alerts */
+    }
+  }
+  

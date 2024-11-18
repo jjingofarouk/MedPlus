@@ -1,0 +1,53 @@
+/* Define color variables */
+:root {
+  --dark-blue: #002432;
+  --light-gray: #dfe4e5;
+  --teal: #27c7b8;
+  --orange: #f78837;
+  --profile-card-background: #dfe4e5;
+  --profile-name-color: #002432;
+  --profile-bio-color: #555555;
+  --section-title-color: #27c7b8;
+  --profile-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  background: var(--light-gray);
+  border: 1px solid var(--dark-blue);
+  border-radius: 8px;
+  color: var(--dark-blue);
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin: 0 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.tab-button:hover,
+.tab-button.active {
+  background: var(--dark-blue);
+  color: var(--light-gray);
+}
+
+.tab-content {
+  padding: 20px;
+  background-color: var(--light-gray);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1400px;
+}
+
+/* Additional styling for each tab section can be added here */

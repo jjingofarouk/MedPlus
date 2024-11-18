@@ -1,0 +1,336 @@
+/* General Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #2e5668;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+/* Sidebar */
+.sidebar {
+    float: left;
+    width: 100%;
+    max-width: 240px;
+    background-color: #e9ecef;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.sidebar a:hover {
+    background-color: #d6d9db;
+}
+
+.sidebar .active {
+    background-color: #2e5668;
+    color: #fff;
+}
+
+/* Main Content */
+main {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 1000px;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Forum Threads */
+.forum-threads ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.forum-threads li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.forum-threads a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forum-threads a:hover {
+    text-decoration: underline;
+}
+
+.forum-threads p {
+    font-size: 0.875em;
+    color: #666;
+}
+
+/* Live Chat */
+#chat-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#chat-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 60px;
+    right: 20px;
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+#chat-messages {
+    padding: 10px;
+}
+
+#chat-input {
+    width: calc(100% - 90px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+#send-message {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* User Badges */
+.user-badges ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.user-badges li {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.badge-icon {
+    width: 50px;
+    height: 50px;
+}
+
+/* User Polls and Surveys */
+.user-polls ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.user-polls li {
+    margin-bottom: 20px;
+}
+
+.user-polls form {
+    margin-top: 10px;
+}
+
+/* Threaded Replies */
+.threaded-replies li {
+    margin-bottom: 20px;
+}
+
+.reply-form {
+    margin-top: 10px;
+}
+
+.btn-reply {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Forum Analytics Dashboard */
+.forum-analytics .analytics-dashboard {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.forum-analytics .stat {
+    flex: 1;
+    min-width: 150px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Event Calendar */
+.event-calendar {
+    margin-top: 20px;
+}
+
+/* User Profiles with Activity Feed */
+.user-profile {
+    margin-top: 20px;
+}
+
+.user-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.user-profile ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.user-profile li {
+    margin-bottom: 10px;
+}
+
+/* Interactive Forum Widgets */
+.trending-topics ul, .active-threads ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.trending-topics li, .active-threads li {
+    margin-bottom: 10px;
+}
+
+/* Rich Text Editor */
+.post-editor textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* User Settings */
+.user-settings form {
+    margin-top: 20px;
+}
+
+.user-settings select, .user-settings button {
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #2e5668;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    clear: both;
+}
+
+.footer-links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        float: none;
+        padding: 10px;
+    }
+
+    .sidebar a {
+        font-size: 0.9em;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    #chat-box {
+        width: calc(100% - 20px);
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .user-avatar {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    .sidebar a {
+        font-size: 0.8em;
+    }
+
+    .btn-primary {
+        padding: 8px 16px;
+    }
+
+    #chat-input {
+        width: calc(100% - 80px);
+    }
+}

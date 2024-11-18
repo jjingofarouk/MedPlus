@@ -1,0 +1,95 @@
+/* Apply general styling to center the login component */
+body {
+    background: #2e5668; /* Dark teal background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .login-container {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(15px);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+  }
+  
+  .login-container h1 {
+    margin-bottom: 24px;
+    color: #ffeaac; /* Light yellow */
+    font-size: 36px;
+    font-weight: 700;
+  }
+  
+  .login-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-container label {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #fff;
+    text-align: left;
+  }
+  
+  .login-container input[type="text"],
+  .login-container input[type="password"] {
+    padding: 16px;
+    margin-bottom: 24px;
+    border: 2px solid #0094d4; /* Hospital blue border */
+    border-radius: 12px;
+    font-size: 16px;
+    color: #333;
+    background: #fff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .login-container input[type="text"]:focus,
+  .login-container input[type="password"]:focus {
+    border-color: #00bfae; /* Teal border on focus */
+    box-shadow: 0 0 10px rgba(0, 191, 174, 0.5); /* Teal glow */
+    outline: none;
+  }
+  
+  .login-container input[type="submit"] {
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    background: #0094d4; /* Hospital blue background */
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .login-container input[type="submit"]:hover {
+    background: #007bb5; /* Darker hospital blue on hover */
+    transform: scale(1.03);
+  }
+  
+  .login-container p {
+    margin-top: 24px;
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  .login-container a {
+    color: #ffeaac; /* Light yellow */
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .login-container a:hover {
+    color: #00bfae; /* Teal */
+    text-decoration: underline;
+  }
+  

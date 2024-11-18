@@ -1,0 +1,55 @@
+/* Ensure the map takes up the full available space */
+.map {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  position: relative;
+  background-color: #f0f0f0; /* Light background color */
+}
+
+/* Customize the leaflet controls for better appearance */
+.leaflet-control {
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  border-radius: 5px;
+  border: 1px solid #ddd; /* Light gray border */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Style the zoom controls */
+.leaflet-control-zoom {
+  background: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+  border-radius: 5px;
+  border: 1px solid #ddd; /* Light gray border */
+}
+
+/* Style the fullscreen control */
+.leaflet-control-fullscreen {
+  background: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+  border-radius: 5px;
+  border: 1px solid #ddd; /* Light gray border */
+}
+
+/* Customize the marker popups */
+.leaflet-popup {
+  background: #dfe4e5; /* White background */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Customize the marker icon */
+.leaflet-marker-icon {
+  border-radius: 50%; /* Round marker */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+/* Add a transition effect for zooming */
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out {
+  transition: background 0.3s ease;
+}
+
+.leaflet-control-zoom-in:hover,
+.leaflet-control-zoom-out:hover {
+  background: #27c7b8; /* Accent color for hover */
+  color: #dfe4e5; /* White text color */
+}

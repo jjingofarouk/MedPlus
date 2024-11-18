@@ -1,0 +1,22 @@
+.field-research-kit {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .data-upload,
+  .data-export,
+  .filter-options {
+    transition: background-color 0.3s;
+  }
+  
+  .data-upload:hover,
+  .data-export:hover,
+  .filter-options:hover {
+    background-color: #e0f7fa;
+  }
+  
+  input[type="file"] {
+    margin-top: 8px;
+  }
+  

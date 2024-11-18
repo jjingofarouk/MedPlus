@@ -1,0 +1,60 @@
+.join-network-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between benefits */
+}
+
+.benefit-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+h1 {
+    color: #2a9d8f; /* Change to your brand's color */
+}
+
+h2 {
+    color: #264653; /* Change to your brand's color */
+}
+
+.application-info {
+    margin-top: 30px;
+    background-color: #e9f5f5; /* Light background for contrast */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.application-info ol {
+    padding-left: 20px;
+}
+
+.network-footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.network-footer a {
+    color: #2a9d8f; /* Change to your brand's color */
+    text-decoration: underline;
+}
+
+.network-footer a:hover {
+    color: #e9c46a; /* Change to your brand's hover color */
+}

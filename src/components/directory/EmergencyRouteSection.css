@@ -1,0 +1,142 @@
+/* Emergency Route Section Styles */
+.emergency-route-section {
+  background-color: #dfe4e5;
+  color: #002432;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.emergency-route-section h2 {
+  color: #002432;
+  border-bottom: 2px solid #27c7b8;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.emergency-route-section button {
+  background-color: #27c7b8;
+  color: #002432;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.emergency-route-section button:hover {
+  background-color: #f78837;
+}
+
+.emergency-route-section button:disabled {
+  background-color: #dfe4e5;
+  color: #002432;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #f78837;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.route-details {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 36, 50, 0.1);
+}
+
+.map-container {
+  height: 300px;
+  margin-bottom: 1.5rem;
+  border: 2px solid #27c7b8;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.route-details h3 {
+  color: #27c7b8;
+  margin-bottom: 1rem;
+}
+
+.route-details p {
+  margin-bottom: 0.5rem;
+}
+
+.route-details strong {
+  color: #002432;
+}
+
+.route-details h4 {
+  color: #f78837;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.route-details ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.route-details li {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #dfe4e5;
+  border-radius: 4px;
+}
+
+.route-details li h5 {
+  color: #27c7b8;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.instructions {
+  background-color: #27c7b8;
+  color: #002432;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-top: 1.5rem;
+}
+
+.instructions h4 {
+  color: #002432;
+  margin-top: 0;
+}
+
+.emergency-contacts {
+  margin-top: 2rem;
+}
+
+.emergency-contacts ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.emergency-contacts li {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 36, 50, 0.1);
+}
+
+.emergency-contacts h3 {
+  color: #27c7b8;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.emergency-contacts p {
+  margin: 0.25rem 0;
+}
+
+.emergency-contacts a {
+  color: #f78837;
+  text-decoration: none;
+}
+
+.emergency-contacts a:hover {
+  text-decoration: underline;
+}

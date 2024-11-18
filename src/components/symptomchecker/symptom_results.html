@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptom Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+    
+</head>
+<body>
+    <div class="sidebar">
+        <a href="{{ url_for('bp.index') }}"><h2>MedHub</h2></a>
+        <a href="{{ url_for('bp.manage_appointments') }}">Manage Appointments</a>
+        <a href="{{ url_for('bp.book_appointment') }}">Book Appointment</a>
+        <a href="{{ url_for('bp.rebook_appointment') }}">ReBook Appointment</a>
+        <a href="{{ url_for('bp.cancel_appointment') }}">Cancel Appointment</a>
+        <a href="{{ url_for('bp.view_doctor_availability') }}">View Doctor Availability</a>
+        <a href="{{ url_for('bp.edit_availability') }}" class="active">Edit Availability</a>
+        <a href="{{ url_for('bp.consultations') }}">Start Consultation</a>
+        <a href="{{ url_for('bp.view_medical_history') }}">View Medical History</a>
+    </div>
+    <h1>Symptom Checker Results</h1>
+    <p>{{ results }}</p>
+    <a href="{{ url_for('bp.symptom_checker') }}">Check Another Symptom</a>
+    <footer>
+
+        
+        <div class="footer-links">
+            <p>&copy; 2024 MedHub. All rights reserved.</p>
+            <a href="{{ url_for('bp.index') }}">Back Home</a>
+            <a href="{{ url_for('bp.privacy_policy') }}">Privacy Policy</a>
+            <a href="{{ url_for('bp.terms_of_service') }}">Terms of Service</a>
+            <a href="{{ url_for('bp.support') }}">Get Support</a>
+            <a href="{{ url_for('bp.view_medical_history') }}">View Medical History</a>
+            <a href="{{ url_for('bp.forum') }}">Community</a>
+            <a href="{{ url_for('bp.contact_us') }}">Contact Us</a>
+        </div>
+    </footer>
+    
+</body>
+</html>

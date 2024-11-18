@@ -1,0 +1,23 @@
+const labOptions = [
+    'Malaria Test',
+    'HIV Test',
+    'Hemoglobin',
+    'Platelet count',
+    'Kidney Function Test',
+    'Cholesterol',
+    'Blood Sugar',
+    'WBC count',
+    'Typhoid Test',
+    'Urinalysis',
+    'Prothrombin time',
+    'Sedimentation rate (ESR)',
+    'Urea nitrogen (BUN)',
+    'Glucose',
+    'Creatinine',
+    'Bilirubin',
+    'Stool Test',
+    'TB Test',
+    'Pregnancy Test',
+    'Sickle Cell Screening',
+    'COVID-19 Test'
+  ];

@@ -1,0 +1,139 @@
+/* SecondOpinionComponent.css */
+
+.second-opinion-container {
+    background-color: #dfe4e5;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #002432;
+  }
+  
+  .tabs-list {
+    display: flex;
+    border-bottom: 2px solid #27c7b8;
+  }
+  
+  .tabs-trigger {
+    padding: 0.5rem 1rem;
+    color: #002432;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .tabs-trigger:hover {
+    background-color: #27c7b8;
+    color: white;
+  }
+  
+  .bg-white {
+    background-color: white;
+  }
+  
+  .flex {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .grid {
+    display: grid;
+  }
+  
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .shadow {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+  
+  .text-xl {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1rem;
+  }
+  
+  .mt-6 {
+    margin-top: 1.5rem;
+  }
+  
+  .input {
+    padding: 0.5rem;
+    border: 1px solid #27c7b8;
+    border-radius: 0.25rem;
+    transition: border-color 0.3s;
+  }
+  
+  .input:focus {
+    border-color: #f78837;
+    outline: none;
+  }
+  
+  .button {
+    background-color: #27c7b8;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .button:hover {
+    background-color: #f78837;
+    transform: translateY(-2px);
+  }
+  
+  .button:focus {
+    outline: none;
+  }
+  
+  .button.variant-outline {
+    background-color: transparent;
+    border: 1px solid #27c7b8;
+    color: #27c7b8;
+  }
+  
+  .button.variant-outline:hover {
+    background-color: #27c7b8;
+    color: white;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    padding: 0.75rem;
+    border: 1px solid #002432;
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #27c7b8;
+    color: white;
+  }
+  
+  .table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .table tr:hover {
+    background-color: #dfe4e5;
+  }
+  

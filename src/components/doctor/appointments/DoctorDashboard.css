@@ -1,0 +1,61 @@
+:root {
+    --color-primary: #002432;
+    --color-secondary: #dfe4e5;
+    --color-accent: #27c7b8;
+    --color-highlight: #f78837;
+  }
+  
+  .doctor-dashboard {
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+    padding: 2rem;
+  }
+  
+  .tile-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .tile {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .tile h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .tile p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+  }
+  
+  .tile .button {
+    background-color: var(--color-accent);
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tile .button:hover {
+    background-color: #22b2a4;
+  }
+  
+  @media (max-width: 768px) {
+    .tile-container {
+      grid-template-columns: 1fr;
+    }
+  }

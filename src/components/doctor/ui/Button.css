@@ -1,0 +1,21 @@
+.button {
+    background-color: #27c7b8; /* Teal */
+    color: #002432; /* Dark Navy */
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #1d9a9a; /* Slightly darker teal for hover */
+  }
+  
+  .button:focus {
+    outline: 2px solid #27c7b8; /* Orange */
+    outline-offset: 2px;
+  }
+  

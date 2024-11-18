@@ -1,0 +1,188 @@
+:root {
+  --dark-navy: #002432;
+  --light-gray: #dfe4e5;
+  --teal: #27c7b8;
+  --orange: #f78837;
+}
+
+body {
+  background-color: var(--light-gray);
+  color: var(--dark-navy);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.directory {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--dark-navy);
+  margin-bottom: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+h1::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: var(--teal);
+  margin: 1rem auto 0;
+}
+
+.tab-container {
+  background-color: #dfe4e5;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 36, 50, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.tab-container:hover {
+  box-shadow: 0 15px 40px rgba(0, 36, 50, 0.15);
+}
+
+.tab-buttons {
+  display: flex;
+  background-color: var(--dark-navy);
+  padding: 0.5rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.tab-buttons::-webkit-scrollbar {
+  display: none;
+}
+
+.tab-button {
+  background-color: transparent;
+  color: var(--light-gray);
+  border: none;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  border-radius: 10px;
+  margin-right: 0.5rem;
+  white-space: nowrap;
+}
+
+.tab-button:hover {
+  background-color: rgba(39, 199, 184, 0.1);
+  color: var(--teal);
+}
+
+.tab-button.active {
+  background-color: var(--teal);
+  color: var(--dark-navy);
+}
+
+.tab-content {
+  padding: 2rem;
+  min-height: 400px;
+}
+
+.section h2 {
+  color: var(--teal);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  border-bottom: 2px solid var(--teal);
+  padding-bottom: 0.5rem;
+}
+
+.item {
+  background-color: var(--light-gray);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.item:hover {
+  background-color: #dfe4e5;
+  box-shadow: 0 5px 15px rgba(0, 36, 50, 0.1);
+  transform: translateY(-5px);
+  border-color: var(--teal);
+}
+
+.item h3 {
+  color: var(--orange);
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.item p {
+  color: var(--dark-navy);
+  margin-bottom: 0.5rem;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0, 36, 50, 0.1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.tab-content > * {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@media (max-width: 768px) {
+  .tab-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tab-button {
+    flex-grow: 1;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .tab-content {
+    padding: 1.5rem;
+  }
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light-gray);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--teal);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--orange);
+}

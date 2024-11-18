@@ -1,0 +1,53 @@
+.pharmacy-details {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #dfe4e5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .close-button {
+    background-color: #d9534f;
+    color: #dfe4e5;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 0.9em;
+    float: right;
+    margin-bottom: 10px;
+  }
+  
+  .close-button:hover {
+    background-color: #c9302c;
+  }
+  
+  .pharmacy-details h3 {
+    margin-top: 0;
+  }
+  
+  .pharmacy-details p {
+    margin: 5px 0;
+  }
+  
+  .pharmacy-details button {
+    background-color: #287094;
+    color: #dfe4e5;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .pharmacy-details button:hover {
+    background-color: #1a5d8b;
+  }
+  

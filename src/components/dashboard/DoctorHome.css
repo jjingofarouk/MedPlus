@@ -1,0 +1,130 @@
+/* Root Variables */
+:root {
+  --primary-color: #004C54; /* Deep Teal */
+  --secondary-color: #009688; /* Medium Teal */
+  --accent-color: #FF7043; /* Coral Orange */
+  --background-color: #F5F7FA; /* Light Gray */
+  --text-color: #333333; /* Dark Gray */
+  --success-color: #4CAF50; /* Green */
+  --error-color: #D32F2D; /* Red */
+  --card-border-radius: 12px;
+  --shadow-light: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+  --transition-speed: 0.3s ease-in-out;
+}
+
+/* Dashboard Layout */
+.dashboard {
+  background-color: var(--background-color);
+  min-height: 100vh;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: 'Arial', sans-serif;
+  color: var(--text-color);
+}
+
+.dashboard-content {
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Header */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+}
+
+.medical-tip {
+  font-size: 1rem;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+/* Dashboard Items - Grid Layout */
+.dashboard-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Cards Styling */
+.dashboard-item {
+  background-color: white;
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--shadow-light);
+  padding: 20px;
+  transition: box-shadow var(--transition-speed);
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-item h2 {
+  margin-top: 0;
+  color: var(--secondary-color);
+}
+
+.dashboard-item p {
+  margin: 10px 0;
+}
+
+.dashboard-item:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 12px;
+}
+
+/* Links and Buttons */
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: var(--card-border-radius);
+  cursor: pointer;
+  transition: background-color var(--transition-speed);
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+}
+
+/* List Styling */
+.dashboard-item ul {
+  padding: 0;
+  list-style: none;
+}
+
+.dashboard-item ul li {
+  background-color: var(--background-color);
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: var(--card-border-radius);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dashboard-items {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #dfe4e5; /* Light background */
+  color: #002432; /* Dark text color */
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for Vital Signs */
+.vital-signs-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #dfe4e5; /* White for card background */
+}
+
+/* Vital Sign Card */
+.vital-sign-card {
+  background-color: #dfe4e5; /* White card background */
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.vital-sign-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Card Icon */
+.vital-sign-icon {
+  color: #27c7b8; /* Teal color for icons */
+}
+
+/* Title and Labels */
+h2, h3, h4 {
+  color: #002432; /* Dark text for titles */
+  margin: 10px 0;
+}
+
+.text-lg {
+  font-size: 1.125rem; /* Slightly larger text */
+}
+
+.text-xl {
+  font-size: 1.25rem; /* Extra large text */
+}
+
+/* Buttons */
+button {
+  background-color: #f78837; /* Orange for buttons */
+  color: #dfe4e5; /* White text */
+  border: none;
+  border-radius: 4px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #d6712c; /* Darker shade for hover effect */
+}
+
+/* Alerts */
+.alert {
+  background-color: #f78837; /* Orange alert background */
+  color: #002432; /* White text */
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+/* Select Components */
+.select {
+  border: 1px solid #27c7b8; /* Teal border */
+  border-radius: 4px;
+  padding: 8px;
+  width: 100%;
+  background-color: #dfe4e5; /* White for dropdown */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .vital-signs-container {
+    padding: 15px;
+  }
+
+  .vital-sign-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

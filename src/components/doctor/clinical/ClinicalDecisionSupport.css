@@ -1,0 +1,64 @@
+.clinical-decision-support {
+    padding: 20px;
+    background-color: #F5F7FA;
+    color: #333333;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h3 {
+    text-align: center;
+    color: #004C54;
+  }
+  
+  .filter-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .search-input, 
+  .specialty-filter {
+    padding: 10px;
+    border: 1px solid #009688;
+    border-radius: 5px;
+    width: 48%;
+  }
+  
+  .guideline-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .guideline-item {
+    background-color: #FFFFFF;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .guideline-item a {
+    text-decoration: none;
+    color: #009688;
+  }
+  
+  .guideline-item a:hover {
+    text-decoration: underline;
+  }
+  
+  .error-message {
+    color: #D32F2D;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .tool-components {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  

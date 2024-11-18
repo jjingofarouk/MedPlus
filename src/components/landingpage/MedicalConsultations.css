@@ -1,0 +1,78 @@
+.consultation-page {
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+    padding: 40px 20px;
+}
+
+.consultation-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.consultation-header h1 {
+    font-size: 2.5rem;
+    color: var(--teal);
+}
+
+.consultation-header p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.consultation-button {
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 12px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.consultation-button:hover {
+    background-color: var(--light-orange);
+}
+
+.consultation-details,
+.consultation-process,
+.consultation-faq,
+.contact-info {
+    margin: 30px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--teal);
+    margin-bottom: 15px;
+}
+
+ul, ol {
+    padding-left: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h4 {
+    font-size: 1.1rem;
+    color: var(--teal);
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-button {
+    background-color: var(--teal);
+    color: var(--white);
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contact-button:hover {
+    background-color: var(--orange);
+}

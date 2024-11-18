@@ -1,0 +1,25 @@
+.pagination {
+    display: flex;
+    justify-content: center; /* Center pagination */
+    list-style: none; /* Remove default list styles */
+    padding: 10px 0; /* Add padding */
+}
+
+.page-item {
+    margin: 0 5px; /* Space between page items */
+}
+
+.page-link {
+    padding: 10px 15px; /* Comfortable button padding */
+    border: 1px solid #27c7b8; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #fff; /* Background color */
+    color: #002432; /* Text color */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.page-link:hover {
+    background-color: #27c7b8; /* Change color on hover */
+    color: white; /* Text color on hover */
+}

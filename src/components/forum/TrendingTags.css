@@ -1,0 +1,53 @@
+/* Define color variables */
+:root {
+    --dark-blue: #002432;
+    --light-gray: #dfe4e5;
+    --teal: #27c7b8;
+    --orange: #f78837;
+    --background-color: #dfe4e5;
+    --tag-background: #002432;
+    --tag-text-color: #dfe4e5;
+    --section-title-color: #27c7b8;
+  }
+  
+  .trending-tags {
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1400px;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    color: var(--section-title-color);
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid var(--section-title-color);
+    padding-bottom: 10px;
+  }
+  
+  .tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .tag {
+    background-color: var(--tag-background);
+    color: var(--tag-text-color);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .tag:hover {
+    background-color: var(--teal);
+    color: var(--light-gray);
+  }
+  

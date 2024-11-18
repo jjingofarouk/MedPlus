@@ -1,0 +1,55 @@
+.hero-section {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2e5668; /* Dark Teal for consistency */
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #2e5668; /* Matching dark teal theme */
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #95ccc5; /* Light teal hover effect */
+  }
+  
+  .nav-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cta-btn.hero-cta {
+    background-color: #ff867c; /* Coral color */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-btn.hero-cta:hover {
+    background-color: #ff655e; /* Slightly darker coral on hover */
+  }
+  

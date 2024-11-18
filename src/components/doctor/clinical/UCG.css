@@ -1,0 +1,167 @@
+.ucg-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #def4e5;
+    border-radius: 16px; /* Increased border-radius for a softer look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Softer shadow */
+    color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; /* iOS font stack */
+}
+
+h3 {
+    text-align: left;
+    color: #004C54;
+    margin-bottom: 20px;
+    font-weight: 600; /* Slightly bolder for emphasis */
+}
+
+.ucg-filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center alignment for better aesthetics */
+    margin-bottom: 20px;
+}
+
+.ucg-search-input {
+    padding: 12px; /* Increased padding for a more spacious feel */
+    border: 1px solid #009688;
+    border-radius: 10px; /* Rounded corners */
+    width: 60%;
+    transition: border-color 0.3s ease; /* Smooth transition */
+}
+
+.ucg-search-input:focus {
+    border-color: #004C54; /* Darker border on focus for better visibility */
+    outline: none; /* Remove default outline */
+}
+
+.ucg-select {
+    padding: 12px; /* Increased padding for better usability */
+    border-radius: 10px; /* Rounded corners */
+    border: 1px solid #009688;
+    background-color: #FFFFFF; /* White background for contrast */
+}
+
+.guideline-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.guideline-card {
+    background-color: #dfe4e5;
+    padding: 20px; /* Increased padding for a more spacious feel */
+    border-radius: 12px; /* Softer corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    flex: 1 1 calc(45% - 10px);
+    transition: transform 0.2s; /* Smooth scaling effect */
+    text-align: left; /* Left-align text for better readability */
+}
+
+.guideline-card:hover {
+    transform: translateY(-2px); /* Subtle hover effect */
+}
+
+.guideline-title {
+    font-size: 1.25rem; /* Slightly larger font size */
+    color: #004C54;
+    margin-bottom: 10px; /* Spacing below the title */
+}
+
+.guideline-snippet {
+    margin-top: 10px; /* Space above the snippet */
+    font-size: 1rem; /* Standard font size for better visibility */
+    line-height: 1.6; /* Increased line-height for better readability */
+    color: #333; /* Ensure the text color is dark for contrast */
+}
+
+.guideline-snippet mark {
+    background-color: #FF7043;
+    color: white;
+    padding: 2px 8px; /* Increased padding for more emphasis */
+    border-radius: 4px; /* Rounded corners for highlighted text */
+    font-weight: bold; /* Bold text for highlighted sections */
+}
+
+.guideline-snippet p {
+    margin: 0; /* Remove default paragraph margin */
+    margin-bottom: 10px; /* Add spacing between paragraphs */
+}
+
+/* Optional: Add styles for lists if used in snippets */
+.guideline-snippet ul {
+    padding-left: 20px; /* Indent unordered lists */
+    margin: 10px 0; /* Spacing above and below lists */
+    list-style-type: disc; /* Disc bullets for lists */
+}
+
+.guideline-snippet li {
+    margin-bottom: 5px; /* Spacing between list items */
+}
+
+.toggle-button {
+    margin-top: 10px;
+    background-color: #FF7043;
+    color: white;
+    border: none;
+    padding: 10px 14px; /* Increased padding for better touch targets */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.toggle-button:hover {
+    background-color: #E64A19; /* Darker shade on hover */
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    display: flex;
+    justify-content: center; /* Centered modal */
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #FFFFFF; /* White background for contrast */
+    padding: 30px; /* Increased padding for spaciousness */
+    border-radius: 16px; /* Rounded corners */
+    width: 90%;
+    max-width: 500px; /* Average modal size */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    position: relative; /* For close button positioning */
+    overflow-y: auto; /* Allow scrolling if content exceeds */
+}
+
+.modal-content h4 {
+    font-size: 1.5rem; /* Larger title for emphasis */
+    color: #004C54; /* Matching color scheme */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.modal-content p {
+    font-size: 1rem; /* Standard font size */
+    line-height: 1.6; /* Increased line height for readability */
+    margin-bottom: 15px; /* Space below paragraphs */
+    color: #333; /* Dark text color for contrast */
+}
+
+.close-button {
+    background-color: #D32F2D;
+    color: white;
+    border: none;
+    padding: 12px 18px; /* Increased padding for better touch targets */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.close-button:hover {
+    background-color: #C62828; /* Darker shade on hover */
+}

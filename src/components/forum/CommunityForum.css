@@ -1,0 +1,368 @@
+/* General styling for the forum header */
+header {
+    background-color: #2e5668; /* Dark Teal */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  /* Main content styling */
+  main {
+    padding: 20px;
+    background-color: #E9EFEC; /* Container Background */
+    min-height: 100vh;
+  }
+  
+  /* Styling for buttons */
+  .btn-primary {
+    display: inline-block;
+    background-color: #ff867c; /* Coral */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #95ccc5; /* Light Teal */
+  }
+  
+  /* Forum threads styling */
+  .forum-threads {
+    margin-bottom: 20px;
+  }
+  
+  .forum-threads h2 {
+    font-size: 1.5rem;
+    color: #2e5668; /* Dark Teal */
+  }
+  
+  .forum-threads ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .forum-threads li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .forum-threads a {
+    color: #2e5668; /* Dark Teal */
+    text-decoration: none;
+  }
+  
+  .forum-threads a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Live chat styling */
+  #live-chat {
+    margin-bottom: 20px;
+  }
+  
+  #chat-button {
+    background-color: #ff867c; /* Coral */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #chat-button:hover {
+    background-color: #95ccc5; /* Light Teal */
+  }
+  
+  #chat-box {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 10px;
+  }
+  
+  #chat-messages {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+  }
+  
+  #chat-input {
+    width: calc(100% - 60px);
+    padding: 5px;
+  }
+  
+  #send-message {
+    background-color: #95ccc5; /* Light Teal */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  #send-message:hover {
+    background-color: #ff867c; /* Coral */
+  }
+  
+  /* User badges styling */
+  .user-badges {
+    margin-bottom: 20px;
+  }
+  
+  .user-badges h2 {
+    font-size: 1.5rem;
+    color: #2e5668; /* Dark Teal */
+  }
+  
+  .user-badges ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .user-badges li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .badge-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  /* Polls styling */
+  .user-polls {
+    margin-bottom: 20px;
+  }
+  
+  .user-polls h2 {
+    font-size: 1.5rem;
+    color: #2e5668; /* Dark Teal */
+  }
+  
+  .user-polls form {
+    margin-top: 10px;
+  }
+  
+  .user-polls label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .user-polls button {
+    background-color: #ff867c; /* Coral */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .user-polls button:hover {
+    background-color: #95ccc5; /* Light Teal */
+  }
+  
+  /* Threaded replies styling */
+  .threaded-replies {
+    margin-bottom: 20px;
+  }
+  
+  .threaded-replies h2 {
+    font-size: 1.5rem;
+    color: #2e5668; /* Dark Teal */
+  }
+  
+  .threaded-replies ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .threaded-replies li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .btn-reply {
+    background-color: #95ccc5; /* Light Teal */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-reply:hover {
+    background-color: #ff867c; /* Coral */
+  }
+  
+  .reply-form {
+    margin-top: 10px;
+  }
+  
+  .reply-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .btn-submit-reply {
+    background-color: #ff867c; /* Coral */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-submit-reply:hover {
+    background-color: #95ccc5; /* Light Teal */
+  }
+  
+  /* Forum analytics styling */
+  .forum-analytics {
+    margin-bottom: 20px;
+  }
+  
+  .forum-analytics h2 {
+    font-size: 1.5rem;
+    color: #2e5668; /* Dark Teal */
+  }
+  
+  .analytics-dashboard {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .stat {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    flex: 1;
+  }
+  
+  /* Event calendar styling */
+  .event-calendar {
+    margin-bottom: 20px;
+  }
+  
+  .event-calendar h2 {
+    font-size: 1.5rem;
+    color: #2e5668; /* Dark Teal */
+  }
+  
+  /* User profile styling */
+  .user-profile {
+    margin-bottom: 20px;
+  }
+  
+  .user-profile h2 {
+    font-size: 1.5rem;
+    color: #2e5668; /* Dark Teal */
+  }
+  
+  .user-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  /* Trending topics and active threads styling */
+  .trending-topics, .active-threads {
+    margin-bottom: 20px;
+  }
+  
+  .trending-topics h2, .active-threads h2 {
+    font-size: 1.5rem;
+    color: #2e5668; /* Dark Teal */
+  }
+  
+  .trending-topics ul, .active-threads ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .trending-topics li, .active-threads li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .trending-topics a, .active-threads a {
+    color: #2e5668; /* Dark Teal */
+    text-decoration: none;
+  }
+  
+  .trending-topics a:hover, .active-threads a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Post editor styling */
+  .post-editor {
+    margin-bottom: 20px;
+  }
+  
+  .post-editor h2 {
+    font-size: 1.5rem;
+    color: #2e5668; /* Dark Teal */
+  }
+  
+  .post-editor form {
+    margin-top: 10px;
+  }
+  
+  .post-editor button {
+    background-color: #95ccc5; /* Light Teal */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .post-editor button:hover {
+    background-color: #ff867c; /* Coral */
+  }
+  
+  /* User settings styling */
+  .user-settings {
+    margin-bottom: 20px;
+  }
+  
+  .user-settings h2 {
+    font-size: 1.5rem;
+    color: #2e5668; /* Dark Teal */
+  }
+  
+  .user-settings form {
+    margin-top: 10px;
+  }
+  
+  .user-settings select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .user-settings button {
+    background-color: #ff867c; /* Coral */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .user-settings button:hover {
+    background-color: #95ccc5; /* Light Teal */
+  }
+  

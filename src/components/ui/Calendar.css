@@ -1,0 +1,48 @@
+.calendar-container {
+    background-color: #ffffff; /* White background for a clean look */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Padding around the content */
+    margin: 20px; /* Margin for spacing */
+}
+
+.calendar-container h2 {
+    font-size: 24px; /* Larger font size for the header */
+    font-weight: bold; /* Bold header text */
+    color: #002432; /* Darker color for the header */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+/* Style for the FullCalendar component */
+.fc {
+    border-radius: 10px; /* Round edges of calendar */
+}
+
+.fc .fc-daygrid-day {
+    border-radius: 10px; /* Round edges of each day cell */
+}
+
+/* Style for event elements */
+.fc-event {
+    border-radius: 10px; /* Round edges of events */
+    transition: transform 0.2s; /* Animation for hover effect */
+}
+
+.fc-event:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Custom toolbar buttons */
+.fc-toolbar button {
+    background-color: #27c7b8; /* Teal color for buttons */
+    color: #ffffff; /* White text for contrast */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded button edges */
+    padding: 10px 15px; /* Padding inside the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.2s; /* Smooth background color transition */
+}
+
+.fc-toolbar button:hover {
+    background-color: #1f9b9e; /* Darker teal on hover */
+}

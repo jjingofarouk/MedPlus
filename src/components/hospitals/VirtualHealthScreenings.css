@@ -1,0 +1,50 @@
+.virtual-health-screenings {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #002432; /* Your preferred color */
+  }
+  
+  h3 {
+    margin-top: 20px;
+    color: #f78837; /* Your preferred color */
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: #dfe4e5; /* Your preferred color */
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  input {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(33% - 22px); /* Responsive sizing */
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #27c7b8; /* Your preferred color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #1ba59a; /* Darker shade on hover */
+  }
+  

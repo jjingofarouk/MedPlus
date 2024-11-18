@@ -1,0 +1,21 @@
+.card {
+    border: 1px solid #dfe4e5; /* Light gray border for a subtle outline */
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #dfe4e5; /* Light gray background color */
+    color: #002432; /* Dark navy text color for contrast */
+}
+
+.card-header {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #27c7b8; /* Teal color for header text */
+    border-bottom: 2px solid #f78837; /* Orange border at the bottom of the header */
+    padding-bottom: 8px; /* Padding below the text */
+}
+
+.card-content {
+    font-size: 1rem;
+    color: #002432; /* Dark navy color for content text */
+}

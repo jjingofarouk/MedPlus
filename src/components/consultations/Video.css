@@ -1,0 +1,100 @@
+/* Video.css */
+
+.video-call-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the page takes up full viewport height */
+    background-color: #f0f0f0; /* Light grey background */
+    font-family: Arial, sans-serif;
+    color: #2e5668; /* Dark Teal for text */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
+}
+
+header {
+    background-color: #2e5668; /* Dark Teal */
+    color: #fff; /* White text */
+    padding: 20px 40px; /* Increased padding for a more spacious header */
+    display: flex;
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for the header */
+    z-index: 1000; /* Ensure header stays above other content */
+    font-size: 1.2em; /* Adjust font size for the header */
+    height: 80px; /* Increased height for the header */
+    box-sizing: border-box; /* Ensure padding is included in height */
+}
+
+header .header-brand {
+    flex-grow: 1; /* Allow the brand to take up remaining space */
+}
+
+header h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.6em; /* Larger font size for the header title */
+    text-align: center; /* Center align the title text */
+    flex-grow: 1; /* Allow the title to take up remaining space */
+}
+
+header a {
+    color: #ffd5d5; /* Light Pink for the link */
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: auto; /* Push the link to the right */
+    font-size: 1em; /* Adjust font size for the link */
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1; /* Allow main content to take up available space */
+    padding: 80px 40px; /* Increased padding for more space around the video */
+    box-sizing: border-box; /* Ensure padding is included in height */
+    display: flex;
+    justify-content: center; /* Center the iframe horizontally */
+    align-items: center; /* Center the iframe vertically */
+}
+
+#jitsi-meet {
+    width: 100%; /* Full width for a more spacious look */
+    max-width: 1600px; /* Increase maximum width */
+    height: calc(100vh - 160px); /* Adjust height to use available space minus header and footer */
+    border: none;
+    border-radius: 20px; /* More rounded edges for a modern look */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Soft shadow for the iframe */
+    margin: 0 auto; /* Center the iframe */
+}
+
+footer {
+    background-color: #2e5668; /* Dark Teal */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 20px 40px; /* Increased padding for a more spacious footer */
+    font-size: 1em; /* Adjust font size for the footer */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for the footer */
+    box-sizing: border-box; /* Ensure padding is included in height */
+}
+
+.footer-links {
+    margin-top: 10px; /* Space above the footer links */
+}
+
+.footer-links a {
+    color: #ffd5d5; /* Light Pink for the links */
+    text-decoration: none;
+    margin: 0 20px; /* More space between links */
+    font-size: 0.9em; /* Slightly smaller font size for the links */
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}

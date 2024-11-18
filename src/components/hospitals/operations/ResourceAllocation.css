@@ -1,0 +1,61 @@
+.capacity-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .capacity-item {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+  }
+  
+  .capacity-item h3 {
+    font-size: 18px;
+    color: #002432;
+    margin-bottom: 8px;
+  }
+  
+  .capacity-bar {
+    height: 20px;
+    border-radius: 4px;
+    background-color: #27c7b8; /* Default color for low capacity */
+    transition: width 0.4s ease-in-out;
+  }
+  
+  .capacity-bar.low {
+    background-color: #27c7b8; /* Green for low capacity */
+  }
+  
+  .capacity-bar.high {
+    background-color: #f78837; /* Orange for high capacity */
+  }
+  
+  .capacity-bar.full {
+    background-color: #e74c3c; /* Red for full capacity */
+  }
+  
+  .notification-item {
+    background-color: #ffe6e6;
+    border-left: 4px solid #e74c3c;
+    padding: 8px;
+    margin-bottom: 8px;
+    color: #b03a2e;
+  }
+  
+  button {
+    background-color: #002432;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-top: 12px;
+    font-size: 14px;
+  }
+  
+  button:hover {
+    background-color: #004a5e;
+  }
+  

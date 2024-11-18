@@ -1,0 +1,235 @@
+/* Global Styles */
+body {
+  background-color: #dfe4e5;
+  color: #002432;
+  font-family: 'Arial', sans-serif;
+}
+
+/* SymptomChecker Container */
+.symptom-checker {
+  background-color: #dfe4e5;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 36, 50, 0.1);
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 40px;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: #002432;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.symptom-checker h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #27c7b8;
+}
+
+.symptom-checker p {
+  color: #002432;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Form Elements */
+.form-group {
+  margin-bottom: 30px;
+}
+
+.form-control {
+  background-color: #dfe4e5;
+  border: 2px solid #002432;
+  border-radius: 8px;
+  color: #002432;
+  font-size: 1rem;
+  padding: 12px 15px;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.form-control:focus {
+  border-color: #27c7b8;
+  box-shadow: 0 0 0 3px rgba(39, 199, 184, 0.2);
+  outline: none;
+}
+
+/* Autocomplete */
+.MuiAutocomplete-root {
+  margin-bottom: 30px;
+}
+
+.MuiAutocomplete-input {
+  background-color: #dfe4e5 !important;
+  border-radius: 8px !important;
+  color: #002432 !important;
+}
+
+.MuiAutocomplete-tag {
+  background-color: #27c7b8 !important;
+  color: #dfe4e5 !important;
+  font-weight: 600 !important;
+  margin: 3px !important;
+  padding: 5px 10px !important;
+}
+
+/* Sliders */
+.MuiSlider-root {
+  color: #27c7b8 !important;
+  margin-top: 10px !important;
+  margin-bottom: 20px !important;
+}
+
+.MuiSlider-thumb {
+  background-color: #f78837 !important;
+  border: 2px solid #dfe4e5 !important;
+}
+
+.MuiSlider-valueLabel {
+  background-color: #002432 !important;
+  color: #dfe4e5 !important;
+  font-weight: 600 !important;
+}
+
+/* Button */
+.submit-button {
+  background-color: #27c7b8;
+  border: none;
+  border-radius: 30px;
+  color: #dfe4e5;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #002432;
+  box-shadow: 0 5px 15px rgba(247, 136, 55, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Results Section */
+.results-container {
+  margin-top: 50px;
+}
+
+.result-item {
+  background-color: #dfe4e5;
+  border-left: 5px solid #27c7b8;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.result-item:hover {
+  box-shadow: 0 5px 15px rgba(0, 36, 50, 0.1);
+  transform: translateY(-3px);
+}
+
+.result-condition {
+  color: #002432;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.result-score, .result-confidence {
+  background-color: #f78837;
+  border-radius: 20px;
+  color: #dfe4e5;
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-right: 10px;
+  padding: 5px 15px;
+}
+
+.result-details {
+  background-color: #dfe4e5;
+  border-radius: 8px;
+  margin-top: 15px;
+  padding: 15px;
+}
+
+.result-details h4 {
+  color: #27c7b8;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .symptom-checker {
+    padding: 30px;
+  }
+
+  .symptom-checker h1 {
+    font-size: 2rem;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .submit-button {
+    width: 100%;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.symptom-checker {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.result-item {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Accessibility */
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* Focus styles for keyboard navigation */
+:focus {
+  outline: 3px solid #f78837;
+  outline-offset: 2px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #dfe4e5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27c7b8;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f78837;
+}

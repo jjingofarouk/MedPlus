@@ -1,0 +1,201 @@
+:root {
+    --color-dark-blue: #002432;
+    --color-light-gray: #dfe4e5;
+    --color-teal: #27c7b8;
+    --color-orange: #f78837;
+    --font-main: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--color-light-gray);
+    color: var(--color-dark-blue);
+    margin: 0;
+    padding: 0;
+}
+
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.welcome-main {
+    flex-grow: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.welcome-title {
+    color: var(--color-dark-blue);
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    letter-spacing: -1px;
+}
+
+.welcome-subtitle {
+    color: var(--color-dark-blue);
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    opacity: 0.8;
+}
+
+.slide-container {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-overview, .how-it-works, .testimonials, .get-started {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 36, 50, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.app-overview h2, .how-it-works h2, .testimonials h2, .get-started h2 {
+    color: var(--color-teal);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.app-overview ul, .how-it-works ol {
+    padding-left: 1.5rem;
+}
+
+.app-overview li, .how-it-works li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 36, 50, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 36, 50, 0.15);
+}
+
+.feature-card svg {
+    color: var(--color-teal);
+    margin-bottom: 1.5rem;
+}
+
+.feature-card h3 {
+    color: var(--color-dark-blue);
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.feature-card p {
+    color: var(--color-dark-blue);
+    font-size: 1.1rem;
+}
+
+.cta-button {
+    background-color: var(--color-orange);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(247, 136, 55, 0.3);
+}
+
+.cta-button:hover {
+    background-color: #e67422;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(247, 136, 55, 0.4);
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.testimonial {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-radius: 12px;
+    max-width: 400px;
+}
+
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: var(--color-dark-blue);
+}
+
+.testimonial span {
+    color: var(--color-teal);
+    font-weight: bold;
+}
+
+.slide-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.slide-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--color-light-gray);
+    margin: 0 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slide-indicator.active {
+    background-color: var(--color-teal);
+}
+
+@media (max-width: 768px) {
+    .welcome-title {
+        font-size: 2.5rem;
+    }
+
+    .welcome-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .testimonial-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slide-container {
+        height: auto;
+    }
+}

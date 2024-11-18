@@ -1,0 +1,87 @@
+.clinical-documentation {
+    background-color: #dfe4e5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .clinical-documentation h2 {
+    color: #002432;
+    margin-bottom: 20px;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  .section h3 {
+    color: #002432;
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #27c7b8;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .file-input {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .attachments-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .attachments-list li {
+    background-color: #f78837;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+  }
+  
+  .fetch-history-btn {
+    background-color: #27c7b8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .fetch-history-btn:hover {
+    background-color: #1e9a8c;
+  }
+  
+  .history-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .history-list li {
+    background-color: #002432;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+  }
+  
+  .save-btn {
+    background-color: #f78837;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .save-btn:hover {
+    background-color: #e77a1b;
+  }
+  

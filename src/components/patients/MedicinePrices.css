@@ -1,0 +1,77 @@
+.medicine-prices {
+    padding: 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: calc(20% - 20px); /* For grid view */
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.list .product-card {
+    width: 100%; /* For list view */
+    display: flex;
+    align-items: center;
+}
+
+.list .product-card img {
+    width: 80px; /* Smaller image in list view */
+    margin-right: 20px;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.pagination button {
+    padding: 5px 10px;
+}
+
+.pagination button.active {
+    background-color: #27c7b8;
+    color: white;
+}
+
+input[type="text"] {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.toggle-view {
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: #f78837;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.toggle-view:hover {
+    background-color: #27c7b8;
+}
+.pagination button.active {
+    background-color: #27c7b8;
+    color: white;
+}

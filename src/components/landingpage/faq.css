@@ -1,0 +1,33 @@
+.faq-section {
+    background-color: var(--deep-blue);
+    color: var(--white);
+    padding: 40px 20px;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--light-gray);
+    padding: 10px 0;
+}
+
+.faq-question {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-toggle {
+    margin-left: 10px;
+}
+
+.faq-answer {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}

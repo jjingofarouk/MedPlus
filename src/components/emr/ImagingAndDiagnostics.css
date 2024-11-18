@@ -1,0 +1,234 @@
+.imaging-and-diagnostics {
+    background-color: #dfe4e5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .imaging-and-diagnostics h2 {
+    color: #002432;
+    margin-bottom: 20px;
+  }
+  
+  .upload-section {
+    margin-bottom: 20px;
+  }
+  
+  .upload-button {
+    display: inline-block;
+    background-color: #27c7b8;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .upload-button:hover {
+    background-color: #1e9a8c;
+  }
+  
+  .search-section {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #27c7b8;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #27c7b8;
+  }
+  
+  .image-gallery {
+    margin-bottom: 20px;
+  }
+  
+  .image-gallery ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .image-gallery .image-item {
+    position: relative;
+    margin: 10px;
+    width: calc(25% - 20px);
+  }
+  
+  .image-gallery img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .delete-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #f78837;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .delete-button:hover {
+    background-color: #e76f00;
+  }
+  
+  .tags {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+  }
+  
+  .tag {
+    background-color: #27c7b8;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    margin-right: 5px;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .remove-tag {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  .add-tag {
+    background-color: #f78837;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-tag:hover {
+    background-color: #e76f00;
+  }
+  
+  .image-preview {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    max-width: 400px;
+    max-height: 80vh;
+    overflow: auto;
+    z-index: 1000;
+  }
+  
+  .image-preview img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .close-preview {
+    background-color: #f78837;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .close-preview:hover {
+    background-color: #e76f00;
+  }
+  
+  .tag-editor {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    max-width: 300px;
+    z-index: 1000;
+  }
+  
+  .new-tag-input {
+    width: calc(100% - 60px);
+    padding: 10px;
+    border: 1px solid #27c7b8;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .add-new-tag-button {
+    background-color: #27c7b8;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+  .add-new-tag-button:hover {
+    background-color: #1e9a8c;
+  }
+  
+  .close-tag-editor {
+    background-color: #f78837;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+  .close-tag-editor:hover {
+    background-color: #e76f00;
+  }
+  
+  .edit-tags-button {
+    background-color: #f78837;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .edit-tags-button:hover {
+    background-color: #e76f00;
+  }
+  

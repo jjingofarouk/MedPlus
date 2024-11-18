@@ -1,0 +1,116 @@
+/* Root styles */
+:root {
+    --primary-color: #004C54;      /* Deep Teal */
+    --secondary-color: #009688;    /* Medium Teal */
+    --accent-color: #FF7043;       /* Coral Orange */
+    --background-color: #F5F7FA;   /* Light Gray */
+    --text-color: #333333;         /* Dark Gray */
+    --success-color: #4CAF50;      /* Green */
+    --error-color: #D32F2D;        /* Red */
+  }
+  
+  /* Container styles */
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+  }
+  
+  div {
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+  
+  /* Card Component Styling */
+  .MuiCard-root {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .MuiCard-root:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Header Styling */
+  .MuiCardHeader-root {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 16px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  /* Content Styling */
+  .MuiCardContent-root {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  /* Input Fields */
+  .MuiTextField-root {
+    width: 100%;
+  }
+  
+  input[type='number'] {
+    appearance: none;
+    padding: 8px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  /* Button Styling */
+  .MuiButton-root {
+    background-color: var(--accent-color);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 24px;
+    transition: background-color 0.3s;
+  }
+  
+  .MuiButton-root:hover {
+    background-color: var(--primary-color);
+  }
+  
+  /* Checkbox Label */
+  .MuiFormControlLabel-root {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 8px 0;
+  }
+  
+  /* Checkbox Styling */
+  .MuiCheckbox-root {
+    color: var(--secondary-color);
+  }
+  
+  /* Typography */
+  .MuiTypography-root {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 12px;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    div {
+      justify-content: flex-start;
+    }
+  }
+  

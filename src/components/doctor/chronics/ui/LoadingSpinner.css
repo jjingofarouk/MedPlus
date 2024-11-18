@@ -1,0 +1,30 @@
+.loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #002432; /* Main text color */
+    position: relative;
+}
+
+.loading-spinner::before {
+    content: '';
+    border: 8px solid #F78837; /* Spinner color */
+    border-top: 8px solid transparent; /* Transparent top */
+    border-radius: 50%;
+    width: 50px; /* Spinner size */
+    height: 50px; /* Spinner size */
+    animation: spin 1s linear infinite; /* Spin animation */
+    position: absolute;
+    left: -70px; /* Positioning */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

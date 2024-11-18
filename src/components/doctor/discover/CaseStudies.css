@@ -1,0 +1,133 @@
+.case-studies-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #def4e5;
+  border-radius: 16px; /* Softer look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+  text-align: center;
+  color: #004C54;
+  margin-bottom: 20px;
+}
+
+.case-form {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.textarea,
+.input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #009688;
+  width: 100%;
+}
+
+.upload-button {
+  background-color: #FF7043;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.upload-button:hover {
+  background-color: #E64A19;
+}
+
+.search-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.search-input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #009688;
+  width: 100%;
+}
+
+.case-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.case-card {
+  background-color: #dfe4e5;
+  border-radius: 12px;
+  padding: 15px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  flex: 1 1 calc(30% - 20px); /* Responsive */
+}
+
+.case-card:hover {
+  transform: translateY(-2px); /* Hover effect */
+}
+
+.case-image {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.pagination-controls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination-button {
+  margin: 0 5px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 16px;
+  max-width: 90%;
+  max-height: 80%;
+  overflow-y: auto; /* Scroll if content is too long */
+}
+
+.modal-case-image {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.close-button {
+  background-color: #D32F2D;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.close-button:hover {
+  background-color: #C62828;
+}
