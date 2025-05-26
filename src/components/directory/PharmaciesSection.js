@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useCallback } from 'react';
 import './PharmaciesSection.css';
-import Map from 'H:/Med/emr-develop/frontend/src/components/ui/Map';
+import Map from '../ui/Map';
 import PharmacyDetails from './PharmacyDetails';
 import pharmaciesData from './pharmacies_data.json';
 
