@@ -1,7 +1,22 @@
 {
-  "name": "nikita",
-  "version": "0.1.0",
+  "name": "medplus",
+  "version": "1.0.0",
   "private": true,
+  "description": "Electronic Medical Records",
+  "main": "index.js",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.17.0 <=20.x"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "homepage": "https://jjingofarouk.github.io/MedPlus",
   "dependencies": {
     "@apollo/client": "^3.11.8",
     "@emotion/react": "^11.11.4",
@@ -66,15 +81,8 @@
     "redux-thunk": "^3.1.0",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://jjingofarouk.github.io/MedPlus",
-  
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   },
   "eslintConfig": {
     "extends": [
@@ -93,11 +101,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "description": "Electronic Medical Records",
-  "main": "index.js",
-  "license": "MIT",
-  "devDependencies": {
-    "gh-pages": "^6.2.0"
   }
 }
