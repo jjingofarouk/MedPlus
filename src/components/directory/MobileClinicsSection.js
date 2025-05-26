@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import 'H:/Med/medhub/src/components/styles/MobileClinicsSection.css';
+import '../styles/MobileClinicsSection.css';
 
 const MobileClinicsSection = ({ clinics }) => {
   const [searchTerm, setSearchTerm] = useState('');
