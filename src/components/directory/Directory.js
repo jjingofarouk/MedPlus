@@ -7,7 +7,7 @@ import HealthCampaignsSection from './HealthCampaignsSection';
 import HealthEventsSection from './HealthEventsSection';
 import EmergencyRouteSection from './EmergencyRouteSection';
 import DoctorsSection from './DoctorsSection'; // Import the DoctorsSection component
-import Spinner from 'H:/Med/medhub/src/components/ui/Spinner.js'; // Import the Spinner component
+import Spinner from '../ui/Spinner.js'; // Import the Spinner component
 
 const Directory = () => {
   const [activeTab, setActiveTab] = useState('hospitals');
